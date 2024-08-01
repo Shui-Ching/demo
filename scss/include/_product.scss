@@ -33,6 +33,9 @@
   //-----------------產品 詳細頁------------------------//
   .pageProductShowTop {
     margin-top: 80px;
+    @media (max-width:480px) {
+      margin-top: 0;
+    }
     .pageContent{
       padding-top: 0;
     }
@@ -48,20 +51,29 @@
      width: 60%;
      margin: auto;
     }
-    @media (max-width: 640px) {
+    @media (max-width: 767px) {
       width: 80%;
      }
-}
-.swiper-slide {
-  padding: 5px;
-  img {
-    border-radius: 25px;
-    box-shadow: 1px 1px 7px 1px rgba(0%, 0%, 0%, 0.1);
-    @media (max-width: 1366px) {
-      border-radius: 15px;
+     @media (max-width: 640px) {
+      width: 87%;
+     }
+     .swiper-slide {
+      padding: 5px;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      @media (max-width: 480px) {
+        margin-bottom: 15px;
+       }
+      img {
+        border-radius: 25px;
+        box-shadow: 1px 1px 7px 1px rgba(0%, 0%, 0%, 0.1);
+        @media (max-width: 1366px) {
+          border-radius: 15px;
+        }
+    }
     }
 }
-}
+
 
 //大圖按鈕
 .pageProductShowTop .swiper-button-next, 
@@ -80,50 +92,65 @@
 }
 //大圖
 .mySwiper2{
-  max-width: 625px;
-  @media (max-width: 1440px) {
-    max-width:550px;
- }
- @media (max-width: 1366px) {
-  max-width:520px;
+  width: calc(100% - 200px);
+  margin-left: 10px;
+  @media (max-width: 1563px) {
+    width: calc(100% - 150px);
+  }
+  @media (max-width: 1112px) {
+    width: calc(100% - 100px);
+  }
+  @media (max-width:480px) {
+   width: 100%;
+   margin: 0;
+  }
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+  .popup-youtube{
+    &::before{
+      content: url(../images/products/video.png);
+      text-align: center;
+          align-content: center;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+    }
+  }
 }
- @media (max-width: 1280px) {
-  max-width:480px;
-}
-@media (max-width: 1080px) {
-  max-width: 400px;
-}
-@media (max-width: 1024px) {
-  max-width: 375px;
-}
-@media (max-width: 991px) {
-  max-width: 100%;
-  text-align: center;
-}
+
 }
 //小圖
 .mySwiper{
-    height: 660px;
+  height: 650px;
+    width: 140px;
+    @media (max-width: 1563px) {
+      height: 600px;
+    }
     @media (max-width: 1440px) {
-      height: 580px;
-   }
-   @media (max-width: 1366px) {
-    height: 545px;
- }
-   @media (max-width: 1280px) {
-   height:500px;
-  }
-  @media (max-width: 1080px) {
-    height:400px;
-  }
-  @media (max-width: 1024px) {
-    height:385px;
-  }
-  @media (max-width: 991px) {
-display: none;
-  }
+      width: 120px;
+      height: 560px;
+    }
+    @media (max-width: 1348px) {
+      height: 500px;
+    }
+    @media (max-width: 1112px) {
+      width: 100px;
+      height:430px;
+    }
+    @media (max-width:991px) {
+      height:490px;
+    }
+    @media (max-width:640px) {
+      height:420px;
+    }
+    @media (max-width:480px) {
+      display: none;
+    }
     .swiper-slide{
-      // height: auto !important;
+    
       img {
         width: 139px;
     }
@@ -174,7 +201,7 @@ display: none;
             margin-right: 20px;
             margin-bottom: 30px;
             &.isActive{
-              a{
+              button{
                 span{
                   border-color: $mainColor;
                   color: $mainColor;
@@ -182,14 +209,16 @@ display: none;
               }
             }
             &:hover{
-              a{
+             button{
                 span{
                   border-color: $mainColor;
                   color: $mainColor;
                 }
               }
             }
-            a{
+           button{
+            border: 0;
+            background: rgba(0, 0, 0, 0);
               span{
                 padding: 8px 25px ;
                 border-radius: 99em;
@@ -202,7 +231,7 @@ display: none;
   }
   }
   .pdShowfunction {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     @media (max-width:480px) {
      padding: 0;
          }
@@ -368,8 +397,10 @@ display: none;
         top:50%;
         right: 10px;
       }
-      a{
+      button{
         padding: 10px 29px 10px 15px;
+        border: 0;
+        background: rgba(0, 0, 0, 0);
         span{
          
         
@@ -396,8 +427,8 @@ display: none;
  }
     .pdShowtext {
       padding: 90px;
-      @media (max-width: 1080px) {
-       padding: 40px;
+      @media (max-width: 1112px) {
+       padding: 30px;
      }
      @media (max-width: 480px) {
       padding: 10px;
@@ -409,18 +440,25 @@ display: none;
 
 .pdShowtitle{
   margin-bottom: 30px;
-  border: solid 2px $mainColor;
-  border-radius: 99em;
+  // border: solid 2px $mainColor;
+  // border-radius: 99em;
   padding: 20px;
+  @media (max-width: 640px) {
+    border: solid 2px $mainColor;
+  border-radius: 99em;
+   }
   span {
     font-size: $textTitle;
     padding: 10px 20px;
     color: $mainColor;
-    // border: solid 2px $mainColor;
-    // border-radius: 99em;
+    border: solid 2px $mainColor;
+    border-radius: 99em;
     @media (max-width: 991px) {
      font-size: 1.2rem;
     }
+    @media (max-width: 640px) {
+     border: 0;
+     }
   }
 }
 
@@ -438,9 +476,36 @@ display: none;
         z-index: -1;
         top: 0;
         right: 0;
+        @media (max-width: 1536px) {
+          width: 880px;
+          height: 450px;
+         }
+         @media (max-width: 1440px) {
+          width: 800px;
+          height: 400px;
+         }
+         @media (max-width: 1112px) {
+          width: 680px;
+          height: 315px;
+         }
+         @media (max-width: 1080px) {
+          width: 660px;
+          height: 300px;
+         }
+         @media (max-width:991px) {
+         display: none;
+         }
       }
       .pdShowImg{
-    
+        aspect-ratio: 6 / 4;
+       overflow: hidden;
+       @media (max-width:991px) {
+        width: 80%;
+        margin: auto;
+       }
+       @media (max-width:480px) {
+       width: 100%;
+       }
       }
     }
   }
@@ -491,6 +556,9 @@ display: none;
   margin-bottom: 150px;
   padding-left: 30px;
   padding-right: 30px;
+  @media (max-width:640px) {
+   margin-bottom: 50px;
+    }
   .title{
     margin-bottom: 20px;
     font-size: $textTitle;
