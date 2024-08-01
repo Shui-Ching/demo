@@ -704,11 +704,6 @@
 }
 @media (max-width: 480px) {
   .pdShowfunction {
-    padding: 20px;
-  }
-}
-@media (max-width: 390px) {
-  .pdShowfunction {
     padding: 0;
   }
 }

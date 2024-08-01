@@ -204,11 +204,8 @@ display: none;
   .pdShowfunction {
     margin-bottom: 40px;
     @media (max-width:480px) {
-     padding: 20px;
+     padding: 0;
          }
-         @media (max-width:390px) {
-          padding: 0;
-              }
 }
 
 //特點
