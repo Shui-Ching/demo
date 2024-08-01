@@ -53,8 +53,11 @@
     @media (max-width:991px) {
        border-radius: 3rem 3rem 0 0;
       }
-    
+    &.scrolled-down {
+    top: 0;
+    }
 }
+
 .pageContent {
     padding-top: 50px;
 }

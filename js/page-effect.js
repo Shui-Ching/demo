@@ -67,3 +67,27 @@
 
 //----------進場
 AOS.init();
+
+//----------內容區向下滑動增加class
+$(document).ready(function() {
+  let lastScrollTop = 0;
+  let scrollDownDistance = 0;
+
+  $(window).scroll(function() {
+    let currentScrollTop = $(this).scrollTop();
+    
+    if (currentScrollTop > lastScrollTop) {
+      scrollDownDistance += currentScrollTop - lastScrollTop;
+      if (scrollDownDistance >= 300) {
+        $('.mainContent').addClass('scrolled-down');
+      }
+    } else {
+      scrollDownDistance -= lastScrollTop - currentScrollTop;
+      if (scrollDownDistance <= 400) {
+        $('.mainContent').removeClass('scrolled-down');
+      }
+    }
+
+    lastScrollTop = currentScrollTop;
+  });
+});
