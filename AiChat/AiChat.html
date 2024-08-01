@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<title>毛寶AI兔</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css?20240718b">
+
+<!-- Fonts -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+</head>
+
+<body>
+<div id="page-transitions">
+    <div id="header">
+        <div class="header-logo">
+            <img src="images/mascot.png" alt="">
+        </div> 
+        <div class="header-title">
+            <strong>HI, 我是你的專屬毛寶AI兔</strong>
+            可以問我問題、跟我聊聊天，或是上傳污漬照片讓我來幫你解決頭疼的頑垢問題!
+        </div>
+    </div>
+    <div id="page-content" class="page-content">
+        <div class="content">
+            <div class="speech-bubble speech-right"> 
+                <div class="head-shot">
+                    <img src="images/user01.png" alt="">
+                </div>
+                <span>我是你的專屬毛寶AI兔！請問需要什麼服務嗎?</span> 
+            </div>
+            <div class="speech-bubble speech-left">
+                <span>細菌若附著在衣物纖維上，該使用哪種洗衣精呢?</span> 
+            </div>
+            <div class="speech-bubble speech-right">
+                <div class="head-shot">
+                    <img src="images/user01.png" alt="">
+                </div> 
+                <span>
+                    毛寶XXX抗菌洗衣精
+                    <br>
+                    <br>
+                    毛寶XXX抗菌洗衣精是一款專為現代家庭設計的高效能洗衣產品。採用先進的抗菌配方，能有效去除衣物上的細菌和病毒，給您和家人全面的健康保障。
+                </span> 
+            </div>
+            <div class="speech-bubble speech-left"> 
+                <span>還有其他推薦的嗎?</span> 
+            </div>
+            <div class="speech-bubble speech-right">
+                <div class="head-shot">
+                    <img src="images/user01.png" alt="">
+                </div> 
+                <span>
+                    毛寶植萃精油雙效防蚊液75g
+                    <br>
+                    <br>
+                    採用純植物萃取精油，安全溫和，適合全家使用。這款防蚊液不僅能有效驅蚊，還具備清新怡人的香氣，讓您在戶外活動時倍感舒適。
+                </span> 
+            </div>
+            <span class="speech-read">2024-9-23 07:18 PM</span>
+            <div class="speech-bubble speech-image speech-left"> 
+                <span>
+                    <img class="responsive-image preload-image" src="images/chat-img.jpg" data-src="images/chat-img.jpg" alt="img">
+                </span> 
+            </div>
+            <div class="speech-bubble speech-right">
+                <div class="head-shot">
+                    <img src="images/user01.png" alt="">
+                </div> 
+                 <span>
+                    逼逼啵啵...經過我的分析，毛寶AI兔覺得這是醬料污漬
+                    <br>
+                    <br>
+                    可以將衣物浸泡在冷水中，加入少量洗衣液或醬料專用的去污劑，浸泡約30分鐘
+                </span> 
+            </div>
+        </div>
+    </div>
+    <div class="fix-menu"><!--調整位置-->
+        <div class="add-bar"><!--調整位置-->
+            <div class="collapse collapse-up" id="add-img">
+              <div class="card card-body">
+                    <div class="bar-action"> 
+                        <button type="button">
+                            <i class="bi bi-card-image"></i>
+                            <span>選擇照片</span> 
+                        </button>
+                        <button type="button">
+                            <i class="bi bi-camera"></i>
+                            <span>開啟相機拍照</span> 
+                        </button>
+                    </div>
+                    <div class="image-check">
+                        <div class="image-preview">
+                            <img src="images/chat-img.jpg" alt="">
+                        </div>
+                        <div class="image-hint my-2">
+                            <span>若您非拍照衣物髒污照片，毛寶Ai兔可能無法正確回答您喔!</span>
+                        </div>
+                        <div class="preview-action">
+                            <button type="button" class="btn btn-ol btn-s">重選照片</button>
+                            <button type="button" class="btn btn-s">確認送出</button>
+                        </div>
+                  </div>
+                </div>
+                
+            </div>
+            <button type="button" class="expand" data-bs-toggle="collapse" data-bs-target="#add-img" aria-expanded="false" aria-controls="add-img">
+                <i class="bi bi-plus-circle"></i>
+            </button>
+        </div>
+        <div class="chat-input">
+            <textarea name="textarea" id="textarea" placeholder="輸入訊息" onkeyup="autosize(this)"></textarea>
+            <button class="send"><i class="fa fa-icon icon-chat02"></i></button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts/autosize/dist/autosize.min.js"></script><!-- 輸入框高度 -->
+
+<!-- 按鈕旋轉 -->
+<script>
+    document.querySelector('.expand').addEventListener('click', function () {
+      this.classList.toggle('rotate-45');
+    });
+</script>
+</body>
+</html>

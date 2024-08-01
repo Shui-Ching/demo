@@ -1,0 +1,201 @@
+//---------------------特大標題 ---------------------//
+.titleL{
+    font-size: $titleL;
+    font-weight: bold;
+    @media (max-width: 1080px) {
+       font-size: 50px;
+    }
+    @media (max-width: 640px) {
+        font-size: 36px;
+     }
+     @media (max-width: 390px) {
+        font-size: 30px;
+     }
+}
+.textTitle{
+    font-size: $textTitle;
+    color:$mainColor ;
+}
+
+//----------------公司簡介-----------------//
+.infoBlock {
+    min-height: 780px;
+    position: relative;
+    @media (max-width: 1440px) {
+        min-height: 650px;
+    }
+    @media (max-width: 1080px) {
+        min-height:590px;
+     }
+    //  @media (max-width:991px) {
+    //    min-height: 1006px;
+    //  }
+    .ctrlImgBlock{
+        position: absolute;
+        @media (max-width:991px) {
+            position: static;
+          }
+        .imgBlock {
+            position: relative;
+        }
+    }
+}
+
+.aboutTextLeft{    
+    .img{
+        border-radius: 99em 0 0 99em;
+        overflow: hidden;
+    }
+}
+
+.aboutTextRight{
+  .ctrlImgBlock{
+    left: 0;
+    .img{
+        border-radius: 0 99em 99em 0;
+        overflow: hidden;
+    }
+  }
+
+}
+
+//1 text left
+.ecoFriendly{
+    @media (max-width:991px) {
+        margin-bottom: 150px;
+     }
+    .textInformation {
+        padding-top: 150px;
+        padding-right: 150px;
+        @media (max-width: 1440px) {
+            padding-top: 100px;
+        }
+        @media (max-width: 1366px) {
+           padding-right: 75px;
+        }
+        @media (max-width: 1080px) {
+            padding-top: 0;
+        }
+        @media (max-width:991px) {
+            padding-right:0;
+         }
+    }  
+    .ctrlImgBlock{
+       
+        .pdImg {
+            position: absolute;
+            bottom: -130px;
+            left: 166px;
+            @media (max-width:480px) {
+              left: 0;
+             }
+        }  
+        .img{
+            @media (max-width:991px) {
+                border-radius: 30px;
+             }
+           
+        }
+    } 
+   
+}
+
+//2 text right
+.health{
+    .textInformation {
+        padding-top: 140px;
+        padding-left: 140px;
+        @media (max-width: 1440px) {
+            padding-top: 0px;
+        }
+        @media (max-width: 1080px) {
+            padding-left: 70px;
+        }
+        @media (max-width: 991px) {
+        
+            padding-left: 0;
+        }
+    }
+    .ctrlImgBlock{
+       
+        .img{
+            @media (max-width: 1440px) {
+                max-width: 80%;
+            }
+            @media (max-width: 1080px) {
+                max-width: 60%;
+            }
+            @media (max-width: 991px) {
+                max-width: 100%;
+                border-radius: 30px;
+            }
+        }
+    }
+  
+}
+
+//3 center text
+.aboutCenterText{
+    .pic{
+        
+        max-width: 331px;
+        margin-top: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        @media (max-width: 1080px) {
+           margin-top: 100px;
+        }
+    }
+    .text{
+        padding-top: 180px;
+        @media (max-width: 1080px) {
+            padding-top: 70px;
+        }
+    }
+    .picOuside {
+        text-align: center;
+    }
+}
+//4
+.earthBgLine{
+    background: url(../images/company/earthbg.png) no-repeat;
+    padding-top: 155px;
+    background-size: contain;
+    @media (max-width: 991px) {
+        padding-top: 0;
+    }
+    .textInformation{
+        padding-left: 165px;
+        padding-right: 230px;
+        padding-top: 165px;
+        @media (max-width: 1440px) {
+            padding-right: 100px;
+        padding-top: 100px;
+        }
+        @media (max-width:1366px) {
+            padding-left: 70px;
+        }
+        @media (max-width: 1080px) {
+            padding-top: 70px;
+            padding-right: 70px;
+         }
+         @media (max-width: 991px) {
+            padding-left: 0;
+        padding-right: 0;
+         
+         }
+    
+    }
+    .ctrlImgBlock{
+        @media (max-width: 991px) {
+            right: 0;
+            top: 0;
+        }
+        .img{
+            @media (max-width: 991px) {
+               border-radius: 30px;
+            }
+        }
+    }
+   
+}

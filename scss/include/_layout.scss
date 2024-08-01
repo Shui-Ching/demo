@@ -1,0 +1,172 @@
+//---------------------內頁banner ---------------------//
+.pageBanner{
+    position: sticky;
+    top: 0;
+    &::before{
+        content: "";
+        background: rgba(0,0,0,0.2);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+   
+}
+.pageBannerTitleText {
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 299px;
+    padding-left: 50px;
+    @media (max-width:640px) {
+       font-size: 36px;
+      }
+    @media (max-width:480px) {
+        top: 170px;
+        padding-left: 0;
+      }
+      @media (max-width:390px) {
+        top: 140px;
+      }
+}
+.pageMainBanner-pc{
+    @media (max-width:640px) {
+        display: none;
+      }
+}
+.pageMainBanner-mb{
+    display: none;
+    @media (max-width:640px) {
+       display: block;
+     }
+}
+//---------------------全內容區 ---------------------//
+.mainContent {
+    background-color: #fff;
+    border-radius: 5rem 5rem 0 0;
+    position: relative;
+    top: -70px;
+    z-index: 3;
+    min-height: 1000px;
+    @media (max-width:991px) {
+       border-radius: 3rem 3rem 0 0;
+      }
+    
+}
+.pageContent {
+    padding-top: 50px;
+}
+//---------------------breadcrumb ---------------------//
+.pageBreadcrumb{
+    // margin-bottom: 80px;
+    .breadcrumb{
+        padding-top: 30px;
+        background: rgba(0, 0, 0, 0);
+        li{
+            &:last-child{
+                a{
+                    color: $mainColor;
+                    font-weight: bold;
+                }
+            }
+                a{
+                    font-size: $mainSizeL;
+                    color: $text;
+                    @media (max-width: 991px) {
+                        font-size: 1rem;
+                       }
+                }
+           }
+    }
+ 
+}
+.breadcrumb li+li:before {
+    content: "/";
+    // padding: 0 6px;
+    color: $text;
+}
+
+//---------------------內頁上選單 ---------------------//
+
+.pageCategory{
+    margin-top: 35px;
+    ul {
+        display: flex;
+        justify-content: center;
+        @media (max-width: 991px) {
+            display: block;
+        }
+        li{
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: center;
+            @media (max-width: 991px) {
+               margin: 10px;
+            }
+            &.isActive{
+                a{
+                    color: #fff;
+                    span{
+                        background-color: $mainColor;
+                        border-color:$mainColor
+                    }
+                }
+            }
+            &:hover{
+                a{
+                    color: #fff;
+                    span{
+                        background-color: $mainColor;
+                       border-color: $mainColor;
+                    }
+                }
+            }
+            a{
+                font-size: $mainSizeL;
+                span{
+                    padding: 10px 17px;
+                    border-radius: 99em;
+                    border: solid 2px $gray;
+                    @media (max-width: 991px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+//---------------------card 樣式 ---------------------//
+.cardList{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width: calc(100% / 3 - 50px);
+            margin-left: 25px;
+            margin-right: 25px;
+            .img{
+                box-shadow: 1px 1px 7px 1px rgba(0%, 0%, 0%, 0.1);
+                border-radius: 25px;
+                overflow: hidden;
+            }
+            .information {
+                padding: 30px;
+                .category{
+                    margin-bottom: 10px;
+                    span {
+                        border: solid 2px $gray;
+                        padding: 6px 15px;
+                        border-radius: 99em;
+                        font-size: 13px;
+                    }
+                }
+                .productName {
+                    font-size: 16px;
+                }
+            }
+           
+        }
+    }
+}

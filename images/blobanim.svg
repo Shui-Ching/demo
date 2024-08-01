@@ -1,0 +1,17 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="100%" id="blobSvg">
+	<defs>
+		<style>
+			.rotate{
+				animation: svgmaskrotate 4s linear 0s infinite normal both;
+				transform-origin: center center;
+			}
+			@keyframes svgmaskrotate{
+				0%{transform: rotate(0deg);}
+				100%{transform: rotate(360deg);}
+			}
+		</style>
+	</defs>
+	<path id="blob" fill="#333399" class="rotate">
+		<animate attributeName="d" dur="4000ms" repeatCount="indefinite" values="M135.7,76.9c-2.1,14.2,8.3,33-4.3,43.1-20.2,16.2-35.8.7-61.7,4.7C16.4,132.9,5.3,87.4,24.1,62.9c9.1-11.8-.6-41.2,37.9-39.9,16,.6,33-20.2,46.6,3.7,12.7,22.3,33,10.5,27.1,50.3h0Z"></animate>
+	</path>
+</svg>

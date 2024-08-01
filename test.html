@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertical Swiper with Thumbs</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <style>
+    .swiper-container {
+      width: 600px;
+      height: 400px;
+    }
+
+    .swiper-slide {
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #000;
+    }
+
+    .mySwiper {
+      width: 100px;
+      height: 100%;
+    }
+
+    .mySwiper2 {
+      width: calc(100% - 100px);
+      height: 100%;
+      float: right;
+    }
+
+    .swiper-slide-thumb-active {
+      border: 2px solid blue;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#slide1">Go to Slide 1</a></li>
+      <li><a href="#slide2">Go to Slide 2</a></li>
+      <li><a href="#slide3">Go to Slide 3</a></li>
+      <li><a href="#slide4">Go to Slide 4</a></li>
+    </ul>
+  </nav>
+
+  <div style="display: flex; height: 400px;">
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" id="slide1">Thumb 1</div>
+        <div class="swiper-slide" id="slide2">Thumb 2</div>
+        <div class="swiper-slide" id="slide3">Thumb 3</div>
+        <div class="swiper-slide" id="slide4">Thumb 4</div>
+      </div>
+    </div>
+
+    <div class="swiper-container mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+      direction: 'vertical' // Set the direction to vertical
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 1, // Show only one slide at a time
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      direction: 'vertical', // Set the direction to vertical
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+
+    // Function to change slide based on hash
+    function goToHashSlide() {
+      var hash = window.location.hash.substring(1);
+      if (hash) {
+        var slideIndex = document.querySelectorAll('.swiper-slide[id]').length;
+        var found = false;
+        document.querySelectorAll('.swiper-slide[id]').forEach((slide, index) => {
+          if (slide.id === hash) {
+            swiper2.slideToLoop(index);
+            found = true;
+          }
+        });
+        if (!found) {
+          swiper2.slideToLoop(0); // Default to first slide if hash not found
+        }
+      }
+    }
+
+    // Event listener for hash change
+    window.addEventListener('hashchange', goToHashSlide);
+
+    // Initial load
+    goToHashSlide();
+  </script>
+</body>
+
+</html>
