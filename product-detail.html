@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>毛寶產品列表</title>
+<title>毛寶產品詳細頁</title>
 <link rel="icon" type="image/png" href="images/icon/favicon.jpg">
 <!-- CSS -->
 
@@ -30,7 +30,7 @@
 
 </head>
 
-<body class="zh-tw page productList">
+<body class="zh-tw page productShow">
     <!-- Header -->
     <header>
         <div class="header-wrapper">
@@ -79,7 +79,7 @@
                                                     <li class="sub-title">依品牌</li>
                                                     <li> <a href="#">毛寶</a></li>
                                                     <li> <a href="#">葳香</a> </li>
-                                                    <li> <a href="#">全效</a></li>
+                                     `               <li> <a href="#">全效</a></li>
                                                     <li> <a href="#">小鹿山丘</a> </li>
                                                     <li> <a href="#">毛寶S</a></li>
                                                     <li> <a href="#">香滿室</a> </li>
@@ -845,11 +845,11 @@
         </div>
 
         <div class="pageMainBanner-pc">
-            <img src="images/banner/pd.jpg" alt="">
-           </div> 
-           <div class="pageMainBanner-mb">
-            <img src="images/banner/about1.jpg" alt="">
-           </div> 
+        <img src="images/banner/pd.jpg" alt="">
+       </div> 
+       <div class="pageMainBanner-mb">
+        <img src="images/banner/about1.jpg" alt="">
+       </div> 
     </div>
     <!-- end banner -->
 
@@ -865,7 +865,9 @@
                         <ul class="breadcrumb">
                             <li><a href="index.html"><span>首頁</span></a></li>
                             <li><a href=""><span>品牌產品</span></a></li>
-                            <li><a href=""><span>熱門新品</span></a></li>
+                            <li><a href=""><span>毛寶</span></a></li>
+                            <li><a href=""><span>衣服清潔</span></a></li>
+                            <li><a href=""><span>毛寶粉領精(多重酵素衣物去劑)強光版</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -874,260 +876,431 @@
         <!-- end breadcrumb -->
 
        
-        <div class="pageSidebarContent">
-                <div class="wrap">
-                <!-- start 側選單 -->
-                <div class="pageSidebar">
+        <div class="pageProductShowContent">
+
+            <div class="pageProductShowTop">
+               
                     <div class="container">
-                        <div class="accordion" id="accordionExample">
-                          
-                        
-                          
-                          <!-- L1 -->
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <span>家庭清潔與防護</span>
-                              </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <div class="accordion" id="accordionSubExample1">
-                                  
-                                  <!-- L2 -->
-                                  <div class="accordion-item">
-                                    <h2 class="accordion-header" id="subHeadingOne">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseOne" aria-expanded="false" aria-controls="subCollapseOne">
-                                        衣物清潔
-                                      </button>
-                                    </h2>
-                                    <div id="subCollapseOne" class="accordion-collapse collapse" aria-labelledby="subHeadingOne" data-bs-parent="#accordionSubExample1">
-                                      <div class="accordion-body">
-                                        洗衣精
-                                      </div>
-                                    </div>
-                                  </div>
-                                  
-                                  <!-- L2 -->
-                                  <div class="accordion-item">
-                                    <h2 class="accordion-header" id="subHeadingTwo">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseTwo" aria-expanded="false" aria-controls="subCollapseTwo">
-                                        食器/料理用具清潔
-                                      </button>
-                                    </h2>
-                                    <div id="subCollapseTwo" class="accordion-collapse collapse" aria-labelledby="subHeadingTwo" data-bs-parent="#accordionSubExample1">
-                                      <div class="accordion-body">
-                                        產品
-                                      </div>
-                                    </div>
-                                  </div>
-                                  
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                        <div class="row">
+                            <!-- start 產品大圖 -->
+                            <div class="col-lg-6">
+                                <div class="ctrlPdPic">
+                                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                                    class="swiper mySwiper2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a class="image-popup-vertical-fit" href="images/products/pd1.jpg" title="">
+                                                <img src="images/products/pd1.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a class="image-popup-vertical-fit" href="images/products/pd2.jpg" title="">
+                                                <img src="images/products/pd2.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a class="image-popup-vertical-fit" href="images/products/pd3.jpg" title="">
+                                                <img src="images/products/pd3.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a class="image-popup-vertical-fit" href="images/products/pd4.jpg" title="">
+                                                <img src="images/products/pd4.jpg" />
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a class="image-popup-vertical-fit" href="images/products/pd5.jpg" title="">
+                                                <img src="images/products/pd5.jpg" />
+                                            </a>
+                                        </div>
+                                        <!-- <div class="swiper-slide">
+                                            <a class="image-popup-vertical-fit" href="images/products/pd6.jpg" title="">
+                                                <img src="images/products/pd6.jpg" />
+                                            </a>
+                                        </div> -->
 
-                            <!-- L1 -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    品牌分類
-                                  </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                  <div class="accordion-body">
-                                    內容 - 第一層 - 第一項
-                                  </div>
+
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
                                 </div>
-                              </div>
-                        
-                          
+                                <div thumbsSlider="" class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="images/products/pd1.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/products/pd2.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/products/pd3.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/products/pd4.jpg" />
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="images/products/pd5.jpg" />
+                                        </div>
+                                        <!-- <div class="swiper-slide">
+                                            <img src="images/products/pd6.jpg" />
+                                        </div> -->
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <!-- end 產品大圖 -->
+
+                            <!-- start 內容區塊 -->
+                            <div class="col-lg-6">
+                                <div class="pageContent">
+                                    <!-- start h1 -->
+                                    <h1 class="pageTitle produxtH1"><span>毛寶粉領精(多重酵素衣物去劑)強光版</span></h1>
+                                    <!-- end h1 -->
+
+                                    <!--start choise -->
+                                    <div class="pdShowChoise">
+                                        <div class="choise pdShowfunction">
+                                            <div class="lable">功能</div>
+                                            <ul>
+                                                <li class="isActive">
+                                                    <a href="">
+                                                        <span>
+                                                            野莓香檸
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>
+                                                            玫瑰香氛
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>
+                                                            玫瑰香氛
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>
+                                                            玫瑰香氛
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>
+                                                            玫瑰香氛
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>
+                                                            玫瑰香氛
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="choise pdShowSpec">
+                                            <div class="lable">規格</div>
+                                            <ul>
+                                                <li class="isActive">
+                                                    <a href="">
+                                                        <span>
+                                                            瓶裝 500g
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>
+                                                            袋裝 750g
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>
+                                                            袋裝 750g
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>
+                                                            袋裝 750g
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>
+                                                            袋裝 750g
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>
+                                                            袋裝 750g
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <span>
+                                                            袋裝 750g
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--end choise -->
+
+                                    <div class="pdShowFeature">
+                                        <p>
+                                            3in1  除皺 l 消臭 l 抗菌 <br>
+                                            衣物皺巴巴，毫無元氣~10秒立馬復活! <br>
+                                            植物系包覆去味，強力瞬效消臭!!
+                                        </p>
+                                    </div>
+
+
+                                    <!-- start 特點 通路 -->
+                                    <div class="accordion pdShowAccordion" id="accordionPanelsStayOpenExample">
+                                        <!--start 特點 -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                                    aria-controls="panelsStayOpen-collapseOne">
+                                                   <span>產品特點</span> 
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseOne"
+                                                class="accordion-collapse collapse show"
+                                                aria-labelledby="panelsStayOpen-headingOne">
+                                                <div class="accordion-body">
+                                                    <div class="liStyle">
+                                                        <ul>
+                                                            <li> 10秒快速撫平織物皺褶：導入SQ1獨特衣物除皺因子，滲透織物毛細孔，瞬效滑順織物拗褶的痕跡，10秒快速撫平衣物皺褶。
+                                                            </li>
+                                                            <li>清新白茶菓綠：以佛手柑的清新酸甜揭開序幕，接續而來是淡淡的奶油白花香氣及輕快的綠茶氣息，尾韻則是溫暖的麝香。
+                                                            </li>
+                                                            <li>SPPR天然植物系消臭：SPPR天然植物系消臭，從200多種植物萃取而成的消臭因子，速效吸附、中和並分解織物上殘留的油煙味、汗味、菸味等臭味，有效分解84%的異味。亦可淨化空間，如垃圾桶、廁所、鞋櫃等異味。
+                                                            </li>
+                                                            <li>天然葡萄柚籽抗菌：採用食品添加物等級的天然葡萄柚籽抑菌成份，於織物表面形成防護膜，有效對抗生活中常見壞菌，並阻斷細菌產生的臭源。可抗大腸桿菌、白色念珠菌、金黃色葡萄球菌、黑麴菌、綠膿桿菌，抗菌率99.9%，雙效淨化，溫和防護。
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end 特點 -->
+
+                                        <!-- start 通路 -->
+                                        <div class="accordion-item ">
+                                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                                    aria-controls="panelsStayOpen-collapseTwo">
+                                                   <span>販售通路</span> 
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="panelsStayOpen-headingTwo">
+                                                <div class="accordion-body">
+                                                   
+                                                    <div class="linkBrand">
+                                                       <ul>
+                                                           <li> <a href="">
+                                                                   <span>小鹿山丘</span>
+                                                               </a></li>
+                                                           <li> <a href="">
+                                                                   <span>小鹿山丘</span>
+                                                               </a></li>
+                                                           <li> <a href="">
+                                                                   <span>小鹿山丘</span>
+                                                               </a></li>
+                                                           <li> <a href="">
+                                                                   <span>小鹿山丘</span>
+                                                               </a></li>
+                                                           <li> <a href="">
+                                                                   <span>小鹿山丘</span>
+                                                               </a></li>
+                                                           <li> <a href="">
+                                                                   <span>小鹿山丘</span>
+                                                               </a></li>
+                                                           <li> <a href="">
+                                                                   <span>小鹿山丘</span>
+                                                               </a></li>
+                                                       </ul>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end 通路 -->
+                                    </div>
+                                    <!-- end 特點 通路-->
+
+                                    <!-- start tag -->
+                                    <div class="tagBlock">
+                                        <ul>
+                                            <li><a href=""><span>#毛寶粉領精</span></a></li>
+                                            <li><a href=""><span>#粉領精</span></a></li>
+                                            <li><a href=""><span>#去漬劑</span></a></li>
+                                            <li><a href=""><span>#酵素去漬</span></a></li>
+                                            <li><a href=""><span>#衣領精</span></a></li>
+                                            <li><a href=""><span>#衣領去漬劑</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- end tag -->
+                                </div>
+                            </div>
+                            <!-- end 內容區塊 -->
                         </div>
-                      </div>
-                    
-<!-- 
-                    <div class="container">
-                        <div class="accordion" id="accordionExample">
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                家庭清潔與防護
-                              </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <div class="accordion" id="accordionSubExample1">
-                                  <div class="accordion-item">
-                                    <h2 class="accordion-header" id="subHeadingOne">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseOne" aria-expanded="false" aria-controls="subCollapseOne">
-                                        衣物清潔
-                                      </button>
-                                    </h2>
-                                    <div id="subCollapseOne" class="accordion-collapse collapse" aria-labelledby="subHeadingOne" data-bs-parent="#accordionSubExample1">
-                                      <div class="accordion-body">
-                                        洗衣精
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-item">
-                                    <h2 class="accordion-header" id="subHeadingTwo">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseTwo" aria-expanded="false" aria-controls="subCollapseTwo">
-                                        食器/料理用具清潔
-                                      </button>
-                                    </h2>
-                                    <div id="subCollapseTwo" class="accordion-collapse collapse" aria-labelledby="subHeadingTwo" data-bs-parent="#accordionSubExample1">
-                                      <div class="accordion-body">
-                                        食器/料理用具清潔-產品
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                個人清潔與防護
-                              </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <div class="accordion" id="accordionSubExample2">
-                                  <div class="accordion-item">
-                                    <h2 class="accordion-header" id="subHeadingThree">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseThree" aria-expanded="false" aria-controls="subCollapseThree">
-                                        第二層 - 第三項
-                                      </button>
-                                    </h2>
-                                    <div id="subCollapseThree" class="accordion-collapse collapse" aria-labelledby="subHeadingThree" data-bs-parent="#accordionSubExample2">
-                                      <div class="accordion-body">
-                                        第二層內容 - 第三項
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="accordion-item">
-                                    <h2 class="accordion-header" id="subHeadingFour">
-                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseFour" aria-expanded="false" aria-controls="subCollapseFour">
-                                        第二層 - 第四項
-                                      </button>
-                                    </h2>
-                                    <div id="subCollapseFour" class="accordion-collapse collapse" aria-labelledby="subHeadingFour" data-bs-parent="#accordionSubExample2">
-                                      <div class="accordion-body">
-                                        第二層內容 - 第四項
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div> -->
-
-
-                </div>
-            <!-- end 側選單 -->
-                
-                <!-- start 內容區塊 -->
-                <div class="pageContent">
-                    <!-- start h1 -->
-                    <h1 class="pageTitle"><span>熱門新品</span></h1>
-                    <!-- end h1 -->
-
-                    <div class="cardList">
-                        <ul>
-                            <li>
-                               
-                                    <div class="img"> <a href=""> <img src="images/products/pd.jpg" alt=""></a></div>
-                                    <div class="information">
-                                        <div class="category"><span>衣物清潔</span></div>
-                                        <div class="productName"><a href=""> <span>毛寶粉領精(多重酵素衣物去劑)500g-強光版</span></a></div>
-                                    </div>
-                               
-                            </li>
-                            <li>
-                               
-                                <div class="img"> <a href=""> <img src="images/products/pd.jpg" alt=""></a></div>
-                                <div class="information">
-                                    <div class="category"><span>衣物清潔</span></div>
-                                    <div class="productName"><a href=""> <span>毛寶粉領精(多重酵素衣物去劑)500g-強光版</span></a></div>
-                                </div>
-                           
-                        </li>
-                        <li>
-                               
-                            <div class="img"> <a href=""> <img src="images/products/pd.jpg" alt=""></a></div>
-                            <div class="information">
-                                <div class="category"><span>衣物清潔</span></div>
-                                <div class="productName"><a href=""> <span>毛寶粉領精(多重酵素衣物去劑)500g-強光版</span></a></div>
-                            </div>
-                       
-                    </li>
-                    <li>
-                               
-                        <div class="img"> <a href=""> <img src="images/products/pd.jpg" alt=""></a></div>
-                        <div class="information">
-                            <div class="category"><span>衣物清潔</span></div>
-                            <div class="productName"><a href=""> <span>毛寶粉領精(多重酵素衣物去劑)500g-強光版</span></a></div>
-                        </div>
-                   
-                </li>
-                <li>
-                   
-                    <div class="img"> <a href=""> <img src="images/products/pd.jpg" alt=""></a></div>
-                    <div class="information">
-                        <div class="category"><span>衣物清潔</span></div>
-                        <div class="productName"><a href=""> <span>毛寶粉領精(多重酵素衣物去劑)500g-強光版</span></a></div>
                     </div>
                
-            </li>
-            <li>
-                   
-                <div class="img"> <a href=""> <img src="images/products/pd.jpg" alt=""></a></div>
-                <div class="information">
-                    <div class="category"><span>衣物清潔</span></div>
-                    <div class="productName"><a href=""> <span>毛寶粉領精(多重酵素衣物去劑)500g-強光版</span></a></div>
-                </div>
-           
-        </li>
-        <li>
-                               
-            <div class="img"> <a href=""> <img src="images/products/pd.jpg" alt=""></a></div>
-            <div class="information">
-                <div class="category"><span>衣物清潔</span></div>
-                <div class="productName"><a href=""> <span>毛寶粉領精(多重酵素衣物去劑)500g-強光版</span></a></div>
             </div>
-       
-    </li>
-    <li>
-       
-        <div class="img"> <a href=""> <img src="images/products/pd.jpg" alt=""></a></div>
-        <div class="information">
-            <div class="category"><span>衣物清潔</span></div>
-            <div class="productName"><a href=""> <span>毛寶粉領精(多重酵素衣物去劑)500g-強光版</span></a></div>
-        </div>
-   
-</li>
-<li>
-       
-    <div class="img"> <a href=""> <img src="images/products/pd.jpg" alt=""></a></div>
-    <div class="information">
-        <div class="category"><span>衣物清潔</span></div>
-        <div class="productName"><a href=""> <span>毛寶粉領精(多重酵素衣物去劑)500g-強光版</span></a></div>
-    </div>
 
-</li>
-                        </ul>
+            <div class="pageProductShowBottom">
+
+                <!-- start 文左圖右 -->
+                <div class="pdShowInfoBlock pdShowTextLeft">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="pdShowtext" 
+                                data-aos="fade-down"
+                                data-aos-delay="50"
+                                data-aos-duration="800"
+                                data-aos-easing="ease-in-out">
+                                    <div class="pdShowtitle">
+                                        <span>3重去污因子 溫和潔淨</span>
+                                        
+                                    </div>
+                                    <p>蛋白酵素+脂肪酵素+植物性潔淨因子，三重去污複配，溫和去除難洗污漬，提升衣物潔淨度。
+                                        <br>輕鬆解決多種難除污漬<br>
+                                        去除汗漬與一般污漬：衣領、袖口、襪子、褲管、貼身衣物殘留的黑垢、汗漬、尿垢、血漬等污漬。
+                                        <br>去除食物污漬：衣物沾染的奶漬、咖啡漬、油漬、醬類、茶漬、水果、紅酒等各類食物污漬。
+                                        去除化粧品污漬：衣物沾染的眉筆、唇彩、粉底、防曬乳等油類化粧品污漬。
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="ctrlImgBlock">
+                                    <div class="pdShowImgBlock">
+                                        <div class="pdShowImg picRadius" 
+                                        data-aos="fade-up"
+                                        data-aos-delay="50"
+                                        data-aos-duration="800"
+                                        data-aos-easing="ease-in-out">
+                                            <img src="images/products/r1.jpg" alt="">
+                                        </div>
+                                        <!-- <div class="pdShowBg">
+                                            <img src="images/company/r1bg.png" alt="">
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-                <!-- end 內容區塊 -->
+                <!-- end 文左圖右 -->
+
+                <!-- start 圖左文右 -->
+                <div class="pdShowInfoBlock pdShowTextRight">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="ctrlImgBlock">
+                                    <div class="pdShowImgBlock">
+                                        <div class="pdShowImg picRadius" 
+                                        data-aos="fade-up"
+                                        data-aos-delay="50"
+                                        data-aos-duration="800"
+                                        data-aos-easing="ease-in-out">
+                                            <img src="images/products/l1.jpg" alt="">
+                                        </div>
+                                        <!-- <div class="pdShowBg">
+                                            <img src="images/company/l2bg.png" alt="">
+                                        </div> -->
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6">
+                                <div class="pdShowtext" 
+                                data-aos="fade-down"
+                                data-aos-delay="50"
+                                data-aos-duration="800"
+                                data-aos-easing="ease-in-out">
+                                   
+                                    <div class="pdShowtitle">
+                                        <span>微米解垢泡 免搓揉 好去污 微米解垢泡 免搓揉 好去污  微米解垢泡 免搓揉 好去污 </span>
+                                        
+                                    </div>
+
+                                    <p>微米級的細緻泡沫，細密滲透力至衣物纖維，快速瓦解髒污。<br>
+                                        經SGS檢驗無添加有害化學物質<br>
+                                        無添加漂白劑、螢光增白劑、甲醛、三氯沙、全磷酸鹽、壬基苯酚等有害化學物質。<br>
+                                        野玫香檸 恬淡輕盈<br>
+                                        女生最好評的優雅馥郁玫瑰香氣，與香檸調合，襯托出恬淡輕盈的氣息。<br>
+                                        噴、等、洗 還給衣物清白
+                                    </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end 圖左文右 -->
+
+                <div class="psShowEdit">
+                    <div class="wrapInside" 
+                    data-aos="fade-up"
+                    data-aos-delay="50"
+                    data-aos-duration="800"
+                    data-aos-easing="ease-in-out">
+                        <div class="title">注意事項：</div>
+
+                        <div class="info">
+                            <ol>
+                                <li>衣物若註明「需乾洗」者或衣物顏色堅牢度不佳時，請勿洗滌（可將衣角浸入水中試驗）。</li>
+                                <li>衣物上的污漬是滋生細菌的溫床，為獲得更佳的清潔效果，建議可在特定的污漬部位直接塗抹適量的洗衣液，並依衣物髒污程度放置適當時間，再正常洗滌。</li>
+                                <li>避免兒童取玩，誤飲時請喝大量清水，就醫治療。</li>
+                                <li>皮膚敏感者，可視狀況配戴手套使用。</li>
+                            </ol> 
+                        </div>
+                    </div>
+                </div>
 
 
 
             </div>
-         </div>
+
+            <div class="backBtn"> 
+                <a href="#" class="btn btn-outline btn-arr backArrow">
+                    <span>回上一層</span>
+                </a>
+            </div>
+
+        </div>
 
     </div>
     <!-- end 全內容區 -->

@@ -30,6 +30,9 @@
   padding-right: 30px;
 }
 
+.mainContent {
+  overflow: clip;
+}
 .mainContent .container {
   max-width: 1700px;
   padding-left: 30px;
@@ -120,7 +123,7 @@
   position: relative;
   top: -70px;
   z-index: 3;
-  min-height: 1000px;
+  min-height: 500px;
 }
 @media (max-width: 991px) {
   .mainContent {
@@ -927,137 +930,30 @@
 }
 
 .pdShowInfoBlock .ctrlImgBlock {
-  position: absolute;
-}
-@media (max-width: 991px) {
-  .pdShowInfoBlock .ctrlImgBlock {
-    position: relative;
-  }
-}
-
-.pdShowImgBlock {
   position: relative;
 }
-
-.pdShowBg {
+.pdShowInfoBlock .ctrlImgBlock .pdShowImgBlock::after {
+  content: "";
   background: #F6F6F6;
+  width: 970px;
   height: 514px;
   position: absolute;
-  top: 51px;
   z-index: -1;
-}
-
-.pdShowTextLeft .ctrlImgBlock {
+  top: 0;
   right: 0;
 }
-.pdShowTextLeft .ctrlImgBlock .pdShowImg {
-  position: relative;
-  left: -155px;
-}
-@media (max-width: 1440px) {
-  .pdShowTextLeft .ctrlImgBlock .pdShowImg {
-    width: 80%;
-    left: 130px;
-  }
-}
-@media (max-width: 1080px) {
-  .pdShowTextLeft .ctrlImgBlock .pdShowImg {
-    left: 273px;
-    width: 60%;
-  }
-}
-@media (max-width: 991px) {
-  .pdShowTextLeft .ctrlImgBlock .pdShowImg {
-    left: auto;
-    width: 70%;
-    margin: auto;
-  }
-}
-@media (max-width: 480px) {
-  .pdShowTextLeft .ctrlImgBlock .pdShowImg {
-    width: 100%;
-  }
-}
-.pdShowTextLeft .ctrlImgBlock .pdShowBg {
+.pdShowTextLeft .ctrlImgBlock .pdShowImgBlock::after {
+  content: "";
+  top: 53px;
+  right: -140px;
   border-radius: 40px 0 0 40px;
-  width: 979px;
-  left: -173px;
 }
-@media (max-width: 1440px) {
-  .pdShowTextLeft .ctrlImgBlock .pdShowBg {
-    width: 694px;
-    left: 109px;
-    height: 400px;
-  }
-}
-@media (max-width: 1080px) {
-  .pdShowTextLeft .ctrlImgBlock .pdShowBg {
-    width: 560px;
-    left: 245px;
-    height: 300px;
-  }
-}
-@media (max-width: 991px) {
-  .pdShowTextLeft .ctrlImgBlock .pdShowBg {
-    display: none;
-  }
-}
-
-.pdShowTextRight .ctrlImgBlock {
-  left: 0;
-}
-.pdShowTextRight .ctrlImgBlock .pdShowImg {
-  position: relative;
-  right: -155px;
-}
-@media (max-width: 1440px) {
-  .pdShowTextRight .ctrlImgBlock .pdShowImg {
-    width: 80%;
-    right: -25px;
-  }
-}
-@media (max-width: 1080px) {
-  .pdShowTextRight .ctrlImgBlock .pdShowImg {
-    width: 60%;
-    right: -50px;
-  }
-}
-@media (max-width: 991px) {
-  .pdShowTextRight .ctrlImgBlock .pdShowImg {
-    right: auto;
-    width: 70%;
-    margin: auto;
-  }
-}
-@media (max-width: 480px) {
-  .pdShowTextRight .ctrlImgBlock .pdShowImg {
-    width: 100%;
-  }
-}
-.pdShowTextRight .ctrlImgBlock .pdShowBg {
+.pdShowTextRight .ctrlImgBlock .pdShowImgBlock::after {
+  content: "";
+  top: 53px;
+  left: -140px;
   border-radius: 0 40px 40px 0;
-  width: 979px;
 }
-@media (max-width: 1440px) {
-  .pdShowTextRight .ctrlImgBlock .pdShowBg {
-    width: 694px;
-    right: 108px;
-    height: 400px;
-  }
-}
-@media (max-width: 1080px) {
-  .pdShowTextRight .ctrlImgBlock .pdShowBg {
-    width: 560px;
-    height: 300px;
-    right: 245px;
-  }
-}
-@media (max-width: 991px) {
-  .pdShowTextRight .ctrlImgBlock .pdShowBg {
-    display: none;
-  }
-}
-
 .wrapInside {
   max-width: 1200px;
   margin: auto;

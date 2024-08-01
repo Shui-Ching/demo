@@ -424,121 +424,63 @@ display: none;
   }
 }
 
-//
+//共用
 .pdShowInfoBlock{
   .ctrlImgBlock{
-    position: absolute;
-    @media (max-width: 991px) {
-     position: relative;
-   }
+    position: relative;
+    .pdShowImgBlock{
+      &::after{
+        content: "";
+        background: $graybg;
+        width: 970px;
+        height: 514px;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+      }
+      .pdShowImg{
+    
+      }
+    }
   }
 }
-.pdShowImgBlock {
-  position: relative;
-}
-.pdShowBg {
-  // background: $graybg;
-  background: $graybg;
-  height: 514px;
-  position: absolute;
-  top: 51px;
-  z-index: -1;
-}
+
+
 
 //圖右
 .pdShowTextLeft{
-
   .ctrlImgBlock{
-    right: 0;
-    .pdShowImg{
-      position: relative;
-      left: -155px;
-      @media (max-width: 1440px) {
-        width: 80%;
-        left: 130px;
-     }
-     @media (max-width:1080px) {
-      left: 273px;
-      width: 60%;
-   }
-   @media (max-width:991px) {
-    left: auto;
-    width: 70%;
-    margin: auto;
- }
- @media (max-width:480px) {
- width: 100%;
+    .pdShowImgBlock{
+      &::after{
+        content: "";
+        top: 53px;
+        right: -140px;
+        border-radius: 40px 0 0 40px;
+      }
+      .pdShowImg{
+    
+      }
+    }
+  }
 }
-    }
-    .pdShowBg{
-      border-radius: 40px 0 0 40px;
-      width: 979px;
-      left: -173px;
-      @media (max-width: 1440px) {
-        width: 694px;
-        left: 109px;
-        height: 400px;
-    }
-    @media (max-width: 1080px) {
-      width: 560px;
-      left: 245px;
-      height: 300px;
-  }
-  @media (max-width:991px) {
-   display: none;
- }
-     }
-    }
-  }
-
-
 
 
 //圖左
 .pdShowTextRight{
-
   .ctrlImgBlock{
-    left: 0;
-    .pdShowImg{
-      position: relative;
-      right: -155px;
-      @media (max-width: 1440px) {
-        width: 80%;
-        right: -25px;
-     }
-     @media (max-width:1080px) {
-      width: 60%;
-      right: -50px;
-   }
-   @media (max-width:991px) {
-   right: auto;
-    width: 70%;
-    margin: auto;
- }
- @media (max-width:480px) {
-  width: 100%;
- }
-    }
-    .pdShowBg{
-      border-radius: 0 40px  40px 0;
-      width: 979px;
-      @media (max-width: 1440px) {
-        width: 694px;
-        right: 108px;
-        height: 400px;
-     }
-     @media (max-width: 1080px) {
-      width: 560px;
-      height: 300px;
-      right: 245px;
-   }
-   @media (max-width:991px) {
-   display: none;
- }
-
+    .pdShowImgBlock{
+      &::after{
+        content: "";
+        top: 53px;
+        left: -140px;
+        border-radius:0 40px 40px 0;
+      }
+      .pdShowImg{
+    
+      }
     }
   }
-
 }
 
 //編輯區
