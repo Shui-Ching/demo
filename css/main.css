@@ -211,7 +211,7 @@
 }
 @media (max-width: 640px) {
   .pageCategory .categoryList {
-    width: 767px;
+    width: 600px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -832,9 +832,9 @@ uncomment this part if you haven't added this code anywhere else
       flex-wrap: nowrap;
   padding: 180px 100px;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .horizontalScrollBlock .block {
-    padding: 90px 50px;
+    padding: 70px 40px;
   }
 }
 .horizontalScrollBlock .block:nth-child(even) {
@@ -844,7 +844,7 @@ uncomment this part if you haven't added this code anywhere else
   width: 510px;
   position: relative;
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .horizontalScrollBlock .block .yearBlock {
     width: auto;
   }
@@ -862,10 +862,10 @@ uncomment this part if you haven't added this code anywhere else
     right: 46px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .horizontalScrollBlock .block .yearBlock .year {
-    font-size: 127px;
-    top: -125px;
+    font-size: 100px;
+    top: -98px;
     right: 0;
   }
 }
@@ -874,6 +874,11 @@ uncomment this part if you haven't added this code anywhere else
   overflow: hidden;
   aspect-ratio: 4/6;
   width: 378px;
+}
+@media (max-width: 767px) {
+  .horizontalScrollBlock .block .yearBlock .img {
+    width: 270px;
+  }
 }
 .horizontalScrollBlock .block .eventBlock ul {
   display: -webkit-box;
@@ -887,6 +892,12 @@ uncomment this part if you haven't added this code anywhere else
   margin-left: 70px;
   width: 420px;
 }
+@media (max-width: 767px) {
+  .horizontalScrollBlock .block .eventBlock ul li {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
 .horizontalScrollBlock .block .eventBlock ul li:nth-child(even) {
   padding-top: 80px;
 }
@@ -894,9 +905,19 @@ uncomment this part if you haven't added this code anywhere else
   font-size: 23px;
   color: #999;
 }
+@media (max-width: 767px) {
+  .horizontalScrollBlock .block .eventBlock ul li .date {
+    font-size: 1.2rem;
+  }
+}
 .horizontalScrollBlock .block .eventBlock ul li .title {
   font-size: 23px;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .horizontalScrollBlock .block .eventBlock ul li .title {
+    font-size: 1.2rem;
+  }
 }
 .horizontalScrollBlock .block .eventBlock ul li .img {
   aspect-ratio: 6/4;

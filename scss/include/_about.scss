@@ -407,7 +407,7 @@
 }
 
 .horizontalScrollBlock {
-    // padding: 170px 85px 150px;
+   
     display: flex;
         flex-wrap: nowrap;
     
@@ -415,8 +415,8 @@
         display: flex;
         flex-wrap: nowrap;
         padding: 180px 100px;
-        @media (max-width:480px) {
-            padding: 90px 50px;
+        @media (max-width:767px) {
+            padding: 70px 40px;
         }
         &:nth-child(even){
             background-color: $graybg;
@@ -424,7 +424,7 @@
     .yearBlock {
         width: 510px;
         position: relative;
-        @media (max-width:480px) {
+        @media (max-width:767px) {
             width: auto;
         }
         .year{
@@ -437,11 +437,16 @@
                 top: -143px;
                 right: 46px;
             }
-            @media (max-width:480px) {
-                font-size: 127px;
-                top: -125px;
+            @media (max-width:767px) {
+                font-size: 100px;
+                top: -98px;
                 right: 0;
             }
+            // @media (max-width:480px) {
+            //     font-size: 127px;
+            //     top: -125px;
+            //     right: 0;
+            // }
 
         }
         .img{
@@ -449,6 +454,9 @@
             overflow: hidden;
             aspect-ratio: 4 / 6;
             width: 378px;
+            @media (max-width:767px) {
+               width: 270px;
+            }
         }
     }
     .eventBlock{
@@ -460,16 +468,26 @@
                 margin-right: 70px;
                 margin-left: 70px;
                 width: 420px;
+                @media (max-width:767px) {
+                    margin-right: 50px;
+                    margin-left: 50px;
+                 }
                 &:nth-child(even){
                     padding-top: 80px;
                 }
                 .date{
                     font-size: $textTitle;
                     color: $grayDark;
+                    @media (max-width:767px) {
+                        font-size:1.2rem;
+                     }
                 }
                 .title{
                     font-size: $textTitle;
                     font-weight: bold;
+                    @media (max-width:767px) {
+                        font-size:1.2rem;
+                     }
                 }
                 .img{
                     aspect-ratio: 6/4;
