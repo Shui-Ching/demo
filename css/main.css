@@ -904,8 +904,18 @@ uncomment this part if you haven't added this code anywhere else
     max-width: 350px;
   }
 }
+@media (max-width: 428px) {
+  .horizontalScrollBlock .block .eventBlock ul li {
+    max-width: 300px;
+  }
+}
 .horizontalScrollBlock .block .eventBlock ul li:nth-child(even) {
   padding-top: 80px;
+}
+@media (max-width: 428px) {
+  .horizontalScrollBlock .block .eventBlock ul li:nth-child(even) {
+    padding-top: 40px;
+  }
 }
 .horizontalScrollBlock .block .eventBlock ul li .date {
   font-size: 23px;

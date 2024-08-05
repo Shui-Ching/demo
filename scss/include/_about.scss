@@ -475,8 +475,14 @@
                     margin-left: 30px;
                     max-width: 350px;
                  }
+                 @media (max-width:428px) {
+                    max-width: 300px;
+                 }
                 &:nth-child(even){
                     padding-top: 80px;
+                    @media (max-width:428px) {
+                        padding-top: 40px;
+                     }
                 }
                 .date{
                     font-size: $textTitle;
