@@ -416,7 +416,7 @@
         flex-wrap: nowrap;
         padding: 180px 100px;
         @media (max-width:767px) {
-            padding: 70px 40px;
+            padding:90px 40px 50px 40px;
         }
         &:nth-child(even){
             background-color: $graybg;
@@ -460,7 +460,9 @@
         }
     }
     .eventBlock{
-        // margin-left: 130px;
+        @media (max-width:767px) {
+          margin-left: 20px;
+         }
         ul{
             display: flex;
             flex-wrap: nowrap;
@@ -469,8 +471,9 @@
                 margin-left: 70px;
                 width: 420px;
                 @media (max-width:767px) {
-                    margin-right: 50px;
-                    margin-left: 50px;
+                    margin-right: 30px;
+                    margin-left: 30px;
+                    max-width: 350px;
                  }
                 &:nth-child(even){
                     padding-top: 80px;

@@ -834,7 +834,7 @@ uncomment this part if you haven't added this code anywhere else
 }
 @media (max-width: 767px) {
   .horizontalScrollBlock .block {
-    padding: 70px 40px;
+    padding: 90px 40px 50px 40px;
   }
 }
 .horizontalScrollBlock .block:nth-child(even) {
@@ -880,6 +880,11 @@ uncomment this part if you haven't added this code anywhere else
     width: 270px;
   }
 }
+@media (max-width: 767px) {
+  .horizontalScrollBlock .block .eventBlock {
+    margin-left: 20px;
+  }
+}
 .horizontalScrollBlock .block .eventBlock ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -894,8 +899,9 @@ uncomment this part if you haven't added this code anywhere else
 }
 @media (max-width: 767px) {
   .horizontalScrollBlock .block .eventBlock ul li {
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+    max-width: 350px;
   }
 }
 .horizontalScrollBlock .block .eventBlock ul li:nth-child(even) {
