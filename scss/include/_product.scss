@@ -196,7 +196,7 @@
         ul{
           display: flex;
           flex-wrap: wrap;
-          width: 85%;
+          // width: 85%;
           @media (max-width:480px) {
             width: 100%;
                }
@@ -408,7 +408,7 @@
         border: 0;
         background: rgba(0, 0, 0, 0);
         span{
-         
+         color: $text;
         
         }
       }

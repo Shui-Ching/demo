@@ -1056,7 +1056,6 @@ uncomment this part if you haven't added this code anywhere else
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 85%;
 }
 @media (max-width: 480px) {
   .pdShowChoise .choise ul {
@@ -1267,6 +1266,10 @@ uncomment this part if you haven't added this code anywhere else
   border: 0;
   background: rgba(0, 0, 0, 0);
 }
+.tagBlock ul li button span {
+  color: #222;
+}
+
 .pageProductShowBottom {
   padding-top: 120px;
 }
