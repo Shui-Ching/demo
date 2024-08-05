@@ -23,6 +23,11 @@
             transform: translate(0, 0);
   }
 }
+.img img {
+  height: 100%;
+  width: 100%;
+}
+
 .wrap {
   max-width: 1700px;
   margin: auto;
@@ -191,6 +196,11 @@
     padding-right: 30px;
   }
 }
+@media (max-width: 640px) {
+  .pageCategory {
+    overflow-x: scroll;
+  }
+}
 .pageCategory .categoryList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,9 +209,12 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (max-width: 991px) {
+@media (max-width: 640px) {
   .pageCategory .categoryList {
-    display: none;
+    width: 767px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 .pageCategory .categoryList li {
@@ -238,14 +251,6 @@
 }
 @media (max-width: 991px) {
   .pageCategory .categoryList li a span {
-    display: block;
-  }
-}
-.pageCategory .categoryDropdown {
-  display: none;
-}
-@media (max-width: 991px) {
-  .pageCategory .categoryDropdown {
     display: block;
   }
 }
@@ -445,6 +450,16 @@ uncomment this part if you haven't added this code anywhere else
     width: 80%;
   }
 }
+@media (max-width: 1366px) {
+  .aboutTextRight .ctrlImgBlock .img {
+    width: 70%;
+  }
+}
+@media (max-width: 1112px) {
+  .aboutTextRight .ctrlImgBlock .img {
+    width: 60%;
+  }
+}
 
 @media (max-width: 991px) {
   .ecoFriendly {
@@ -570,6 +585,12 @@ uncomment this part if you haven't added this code anywhere else
 .aboutCenterText .picOuside {
   text-align: center;
   aspect-ratio: 4/5;
+  overflow: hidden;
+}
+@media (max-width: 480px) {
+  .aboutCenterText .picOuside {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -637,6 +658,158 @@ uncomment this part if you haven't added this code anywhere else
 @media (max-width: 991px) {
   .earthBgLine .ctrlImgBlock .img {
     border-radius: 30px;
+  }
+}
+
+.aboutLogo {
+  min-height: 600px;
+}
+@media (max-width: 820px) {
+  .aboutLogo {
+    margin-bottom: 60px;
+  }
+}
+.aboutLogo .ctrlFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 130px 70px 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 1280px) {
+  .aboutLogo .ctrlFlex {
+    padding: 130px 50px 70px;
+  }
+}
+@media (max-width: 820px) {
+  .aboutLogo .ctrlFlex {
+    padding: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutLogo .ctrlFlex {
+    display: block;
+  }
+}
+.aboutLogo .ctrlFlex .textInformation {
+  padding-left: 30px;
+  padding-top: 70px;
+}
+@media (max-width: 1536px) {
+  .aboutLogo .ctrlFlex .textInformation {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .aboutLogo .ctrlImgBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 991px) {
+  .aboutLogo .ctrlImgBlock .imgBlock .pdImg {
+    text-align: center;
+  }
+}
+
+@media (max-width: 1536px) {
+  .aboutMarkets {
+    min-height: 600px;
+  }
+}
+@media (max-width: 991px) {
+  .aboutMarkets .ctrlImgBlock .img {
+    border-radius: 30px;
+    width: 100%;
+  }
+}
+.aboutMarkets .textInformation {
+  padding-left: 143px;
+  padding-top: 113px;
+}
+@media (max-width: 1536px) {
+  .aboutMarkets .textInformation {
+    padding: 50px;
+  }
+}
+@media (max-width: 640px) {
+  .aboutMarkets .textInformation {
+    padding: 20px;
+  }
+}
+
+.fourPhilosophyBlock {
+  background: #EFF7FF;
+  border-radius: 5rem;
+  padding: 50px;
+}
+@media (max-width: 640px) {
+  .fourPhilosophyBlock {
+    padding: 50px 0;
+  }
+}
+.fourPhilosophyBlock .textInformation {
+  text-align: center;
+  max-width: 840px;
+  margin: auto;
+}
+.fourPhilosophyBlock .textInformation .titleL {
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .fourPhilosophyBlock .textInformation .titleL {
+    margin-bottom: 10px;
+  }
+}
+.fourPhilosophyBlock ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.fourPhilosophyBlock ul li {
+  width: calc(50% - 140px);
+  margin: 70px;
+}
+@media (max-width: 1112px) {
+  .fourPhilosophyBlock ul li {
+    width: calc(50% - 60px);
+    margin: 30px;
+  }
+}
+@media (max-width: 640px) {
+  .fourPhilosophyBlock ul li {
+    width: calc(100% - 1px);
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}
+.fourPhilosophyBlock ul li .img {
+  border-radius: 40px;
+  overflow: hidden;
+  aspect-ratio: 6/4;
+  margin-bottom: 40px;
+}
+@media (max-width: 820px) {
+  .fourPhilosophyBlock ul li .img {
+    margin-bottom: 0;
+  }
+}
+.fourPhilosophyBlock ul li .titleL {
+  margin-bottom: 30px;
+}
+@media (max-width: 820px) {
+  .fourPhilosophyBlock ul li .titleL {
+    margin-bottom: 0;
   }
 }
 

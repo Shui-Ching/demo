@@ -114,12 +114,19 @@
         padding-left: 30px;
         padding-right: 30px;
        }
+       @media (max-width: 640px) {
+      overflow-x: scroll;
+       }
    .categoryList {
         display: flex;
         justify-content: center;
-        @media (max-width: 991px) {
-          display: none;
-        }
+        @media (max-width: 640px) {
+           width: 767px;
+           justify-content: flex-start;
+             }
+        // @media (max-width: 991px) {
+        //   display: none;
+        // }
         li{
             margin-left: 5px;
             margin-right: 5px;
@@ -158,12 +165,15 @@
             }
         }
     }
-    .categoryDropdown{
-        display: none;
-        @media (max-width: 991px) {
-           display: block;
-          }
-    }
+    // .categoryDropdown{
+    //     display: none;
+    //     border-radius: 99em;
+    //     padding-left: 20px;
+    //     @media (max-width: 991px) {
+    //        display: block;
+    //       }
+        
+    // }
 }
 
 .categoryDropdown option.active {
