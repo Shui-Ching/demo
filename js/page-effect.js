@@ -108,6 +108,28 @@ $(document).ready(function() {
 
 });
 
+
+//內頁上選單
+// document.addEventListener('DOMContentLoaded', function() {
+//   const dropdown = document.querySelector('.categoryDropdown');
+
+//   dropdown.addEventListener('change', function() {
+//       // 清除之前的 active 类
+//       Array.from(dropdown.options).forEach(option => {
+//           option.classList.remove('active');
+//       });
+
+//       // 为选中的选项添加 active 类
+//       dropdown.options[dropdown.selectedIndex].classList.add('active');
+
+//       const selectedValue = dropdown.value;
+//       if (selectedValue) {
+//           window.location.href = selectedValue;
+//       }
+//   });
+// });
+
+
 //lightbox 影片
 // $(document).ready(function() {
 //   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({

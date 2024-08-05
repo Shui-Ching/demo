@@ -151,7 +151,7 @@
 }
 
 .pageContent {
-  padding-top: 50px;
+  padding-top: 75px;
 }
 
 .pageBreadcrumb .breadcrumb {
@@ -172,6 +172,11 @@
   }
 }
 
+.breadcrumbBlock {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .breadcrumb li + li:before {
   content: "/";
   color: #222;
@@ -180,7 +185,13 @@
 .pageCategory {
   margin-top: 35px;
 }
-.pageCategory ul {
+@media (max-width: 991px) {
+  .pageCategory {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.pageCategory .categoryList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,46 +200,59 @@
           justify-content: center;
 }
 @media (max-width: 991px) {
-  .pageCategory ul {
-    display: block;
+  .pageCategory .categoryList {
+    display: none;
   }
 }
-.pageCategory ul li {
+.pageCategory .categoryList li {
   margin-left: 5px;
   margin-right: 5px;
   text-align: center;
 }
 @media (max-width: 991px) {
-  .pageCategory ul li {
+  .pageCategory .categoryList li {
     margin: 10px;
   }
 }
-.pageCategory ul li.isActive a {
+.pageCategory .categoryList li.isActive a {
   color: #fff;
 }
-.pageCategory ul li.isActive a span {
+.pageCategory .categoryList li.isActive a span {
   background-color: #002080;
   border-color: #002080;
 }
-.pageCategory ul li:hover a {
+.pageCategory .categoryList li:hover a {
   color: #fff;
 }
-.pageCategory ul li:hover a span {
+.pageCategory .categoryList li:hover a span {
   background-color: #002080;
   border-color: #002080;
 }
-.pageCategory ul li a {
+.pageCategory .categoryList li a {
   font-size: 19px;
 }
-.pageCategory ul li a span {
+.pageCategory .categoryList li a span {
   padding: 10px 17px;
   border-radius: 99em;
   border: solid 2px #E0E0E0;
 }
 @media (max-width: 991px) {
-  .pageCategory ul li a span {
+  .pageCategory .categoryList li a span {
     display: block;
   }
+}
+.pageCategory .categoryDropdown {
+  display: none;
+}
+@media (max-width: 991px) {
+  .pageCategory .categoryDropdown {
+    display: block;
+  }
+}
+
+.categoryDropdown option.active {
+  background-color: #002080;
+  color: #fff;
 }
 
 .cardList ul {
@@ -346,9 +370,14 @@ uncomment this part if you haven't added this code anywhere else
   font-size: 60px;
   font-weight: bold;
 }
-@media (max-width: 1348px) {
+@media (max-width: 1440px) {
   .titleL {
     font-size: 3rem;
+  }
+}
+@media (max-width: 1112px) {
+  .titleL {
+    font-size: 2rem;
   }
 }
 
@@ -366,9 +395,19 @@ uncomment this part if you haven't added this code anywhere else
     min-height: 650px;
   }
 }
+@media (max-width: 1112px) {
+  .infoBlock {
+    min-height: 560px;
+  }
+}
 @media (max-width: 1080px) {
   .infoBlock {
     min-height: 590px;
+  }
+}
+@media (max-width: 480px) {
+  .infoBlock {
+    min-height: auto;
   }
 }
 .infoBlock .ctrlImgBlock {
@@ -440,6 +479,7 @@ uncomment this part if you haven't added this code anywhere else
 @media (max-width: 991px) {
   .ecoFriendly .textInformation {
     padding-right: 0;
+    padding-left: 0;
   }
 }
 .ecoFriendly .ctrlImgBlock .pdImg {
@@ -473,6 +513,12 @@ uncomment this part if you haven't added this code anywhere else
     padding-top: 0px;
   }
 }
+@media (max-width: 1112px) {
+  .health .textInformation {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
 @media (max-width: 1080px) {
   .health .textInformation {
     padding-left: 70px;
@@ -488,7 +534,7 @@ uncomment this part if you haven't added this code anywhere else
     max-width: 80%;
   }
 }
-@media (max-width: 1080px) {
+@media (max-width: 1112px) {
   .health .ctrlImgBlock .img {
     max-width: 60%;
   }
@@ -497,6 +543,7 @@ uncomment this part if you haven't added this code anywhere else
   .health .ctrlImgBlock .img {
     max-width: 100%;
     border-radius: 30px;
+    width: 100%;
   }
 }
 
@@ -522,13 +569,25 @@ uncomment this part if you haven't added this code anywhere else
 }
 .aboutCenterText .picOuside {
   text-align: center;
-  aspect-ratio: 4/6;
+  aspect-ratio: 4/5;
+}
+
+@media (max-width: 991px) {
+  .aboutCenterText .row > * {
+    width: auto;
+    margin: auto;
+  }
 }
 
 .earthBgLine {
   background: url(../images/company/earthbg.png) no-repeat;
   padding-top: 155px;
   background-size: contain;
+}
+@media (max-width: 1112px) {
+  .earthBgLine {
+    padding-top: 70px;
+  }
 }
 @media (max-width: 991px) {
   .earthBgLine {
@@ -566,6 +625,7 @@ uncomment this part if you haven't added this code anywhere else
   .earthBgLine .textInformation {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 20px;
   }
 }
 @media (max-width: 991px) {
@@ -631,6 +691,11 @@ uncomment this part if you haven't added this code anywhere else
   .ctrlPdPic {
     width: 60%;
     margin: auto;
+  }
+}
+@media (max-width: 820px) {
+  .ctrlPdPic {
+    width: 75%;
   }
 }
 @media (max-width: 767px) {
@@ -828,6 +893,11 @@ uncomment this part if you haven't added this code anywhere else
 .pdShowChoise .choise ul li {
   margin-right: 20px;
   margin-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .pdShowChoise .choise ul li {
+    margin-right: 0;
+  }
 }
 .pdShowChoise .choise ul li.isActive button span {
   border-color: #002080;

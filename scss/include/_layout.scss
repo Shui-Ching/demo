@@ -70,7 +70,7 @@
 }
 
 .pageContent {
-    padding-top: 50px;
+    padding-top: 75px;
 }
 //---------------------breadcrumb ---------------------//
 .pageBreadcrumb{
@@ -96,6 +96,10 @@
     }
  
 }
+.breadcrumbBlock {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 .breadcrumb li+li:before {
     content: "/";
     // padding: 0 6px;
@@ -106,11 +110,15 @@
 
 .pageCategory{
     margin-top: 35px;
-    ul {
+    @media (max-width: 991px) {
+        padding-left: 30px;
+        padding-right: 30px;
+       }
+   .categoryList {
         display: flex;
         justify-content: center;
         @media (max-width: 991px) {
-            display: block;
+          display: none;
         }
         li{
             margin-left: 5px;
@@ -150,7 +158,19 @@
             }
         }
     }
+    .categoryDropdown{
+        display: none;
+        @media (max-width: 991px) {
+           display: block;
+          }
+    }
 }
+
+.categoryDropdown option.active {
+    background-color: $mainColor;
+    color: #fff;
+}
+
 //---------------------card 樣式 ---------------------//
 .cardList{
     ul{

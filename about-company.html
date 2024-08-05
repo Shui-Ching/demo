@@ -29,7 +29,7 @@
 <link rel="stylesheet" href="css/main.min.css?20240729e">
 </head>
 
-<body class="zh-tw page about">
+<body class="page about">
     <!-- Header -->
     <header>
         <div class="header-wrapper">
@@ -859,14 +859,14 @@
         <!--start breadcrumb -->
         <div class="pageBreadcrumb">
             <div class="wrap">
-                <div class="container">
-                    <div class="row">
+               
+                    <div class="breadcrumbBlock">
                         <ul class="breadcrumb">
                             <li><a href="index.html"><span>首頁</span></a></li>
                             <li><a href=""><span>關於毛寶</span></a></li>
                             <li><a href=""><span>公司簡介</span></a></li>
                         </ul>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -879,7 +879,7 @@
 
                     <!--start 分類按鈕 -->
                     <div class="pageCategory">
-                        <ul>
+                        <ul class="categoryList">
                             <li class="isActive">
                                 <a href=""><span>公司簡介</span></a>
                             </li>
@@ -893,6 +893,13 @@
                                 <a href=""><span>人才招募</span></a>
                             </li>
                         </ul>
+                        <select class="categoryDropdown">
+                            <option value="" selected disabled>選擇分類</option>
+                            <option value="">公司簡介</option>
+                            <option value="">公司願景</option>
+                            <option value="">公司沿革</option>
+                            <option value="">人才招募</option>
+                        </select>
                     </div>
                     <!-- end 分類按鈕 -->
 
