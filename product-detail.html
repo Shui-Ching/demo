@@ -31,358 +31,366 @@
 </head>
 
 <body class="page productShow">
-    <!-- Header -->
-    <header>
-        <div class="header-wrapper">
-            <!-- Desktop Menu -->
-            <div class="header-wrapper-desktop">
-                <div class="header">
-                    <div class="container-fluid">
-                        <div class="header-main l-nav_main">
-                            <div class="header__logo"> 
+   <!-- Header -->
+   <header>
+    <div class="header-wrapper">
+        <!-- Desktop Menu -->
+        <div class="header-wrapper-desktop">
+            <div class="header">
+                <div class="container-fluid">
+                    <div class="header-main l-nav_main">
+                        <div class="header__logo"> 
+                            <a href="#"> 
+                                <img src="images/logo.png" alt="">
+                            </a> 
+                        </div>
+                        <nav class="header__navbar d-none d-lg-block">
+                            <div class="l-nav_main-current"></div>
+                            <ul class="navbar-menu">
+                                <li class="main-menu">
+                                    <a href="#" class="active">關於毛寶</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">公司簡介</a></li>
+                                        <li><a href="#">公司願景</a></li>
+                                        <li><a href="#">公司沿革</a></li>
+                                        <li><a href="#">人才招募</a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-menu">
+                                    <a href="#">最新消息</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">公關新聞</a></li>
+                                        <li><a href="#">新品介紹</a></li>
+                                        <li><a href="#">獲獎訊息</a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-menu full-dropdown-submenu product-menu">
+                                    <a href="#">品牌產品</a>
+                                    <div class="sub-menu">
+                                        <div class="second-menu">
+                                            <ul>
+                                                <li class="sub-title">全部商品</li>
+                                                <li> <a href="#">全系列</a></li>
+                                                <li> <a href="#">熱門產品</a> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="second-menu">
+                                            <ul>
+                                                <li class="sub-title">依品牌</li>
+                                                <li> <a href="#">毛寶</a></li>
+                                                <li> <a href="#">葳香</a> </li>
+                                                <li> <a href="#">全效</a></li>
+                                                <li> <a href="#">小鹿山丘</a> </li>
+                                                <li> <a href="#">毛寶S</a></li>
+                                                <li> <a href="#">香滿室</a> </li>
+                                                <li> <a href="#">毛寶兔</a></li>
+                                                <li> <a href="#">EKO's</a> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="second-menu">
+                                            <ul>
+                                                <li class="sub-title">家庭清潔與防護</li>
+                                                <li><a href="#">衣物清潔衣物清潔衣物</a></li>
+                                                <li><a href="#">食器/料理用具清潔</a></li>
+                                                <li><a href="#">廚房清潔</a></li>
+                                                <li><a href="#">浴室清潔</a></li>
+                                                <li><a href="#">地板/表面清潔</a></li>
+                                                <li><a href="#">電器清潔</a></li>
+                                                <li><a href="#">除蟲系列</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="second-menu">
+                                            <ul>
+                                                <li class="sub-title">個人清潔與防護</li>
+                                                <li><a href="#">防蚊防護</a></li>
+                                                <li><a href="#">抗菌噴霧</a></li>
+                                                <li><a href="#">身體清潔</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-menu full-dropdown-submenu investor-menu">
+                                    <a href="#">投資人專區</a>
+                                    <div class="sub-menu">
+                                        <div class="second-menu">
+                                            <ul>
+                                                <li class="sub-title">公司治理</li>
+                                                <li> <a href="#">公司組織架構</a></li>
+                                                <li> <a href="#">內部稽核</a> </li>
+                                                <li> <a href="#">董事會</a></li>
+                                                <li> <a href="#">功能性委員會</a> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="second-menu">
+                                            <ul>
+                                                <li class="sub-title">財務業務資訊</li>
+                                                <li><a href="#">公司年報</a></li>
+                                                <li><a href="#">營收報表</a></li>
+                                                <li><a href="#">財務報告</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="second-menu">
+                                            <ul>
+                                                <li class="sub-title">股東服務</li>
+                                                <li><a href="#">股東會資訊</a></li>
+                                                <li><a href="#">重大訊息</a></li>
+                                                <li><a href="#">股利股價資訊</a></li>
+                                                <li><a href="#">股東問題回答</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-menu esg-menu">
+                                    <a href="#">企業社會責任</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">永續發展委員會</a></li>
+                                        <li><a href="#">利害關係人</a></li>
+                                        <li><a href="#">歷年永續報告書下載</a></li>
+                                    </ul>
+                                </li>
+                                <li class="main-menu ">
+                                    <a href="#">毛寶兔宅配網</a>
+                                    <!-- <ul class="sub-menu">
+                                        <li><a href="#">永續發展委員會</a></li>
+                                        <li><a href="#">利害關係人</a></li>
+                                        <li><a href="#">歷年永續報告書下載</a></li>
+                                    </ul> -->
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__button">
+                            <ul>
+                                <li class="member">
+                                    <div><i class="bi bi-person"></i></div>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">登入/註冊</a></li>
+                                        <li><a href="#">會員基本資料</a></li>
+                                        <li><a href="#">登出</a></li>
+                                    </ul>
+                                    <!--登入前-->
+                                    <!-- <a href="login.html" class="btn"><span>登入 / 註冊</span></a> -->
+                                </li>
+                                <li class="language">
+                                    <div><i class="bi bi-globe"></i></div>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">繁體中文</a></li>
+                                        <li><a href="#">English</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header-search">
+                                    <div class="search-button"><i class="bi bi-search"></i></div>
+                                    <div class="search-input">
+                                        <input type="text" placeholder="請輸入關鍵字...">
+                                        <a href="#"></a> </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <!-- Menu 按鈕 -->
+                    <button class="l-nav_full-list-btn"><span></span></button>
+                    <!-- 彈窗 -->
+                    <dialog id="contentDialog" class="dialog-container">
+                        <div class="dialog-header">
+                            <div class="logo"> 
                                 <a href="#"> 
                                     <img src="images/logo.png" alt="">
                                 </a> 
                             </div>
-                            <nav class="header__navbar d-none d-lg-block">
-                                <div class="l-nav_main-current"></div>
-                                <ul class="navbar-menu">
-                                    <li class="main-menu">
-                                        <a href="#" class="active">關於毛寶</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">公司簡介</a></li>
-                                            <li><a href="#">公司願景</a></li>
-                                            <li><a href="#">公司沿革</a></li>
-                                            <li><a href="#">人才招募</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="main-menu">
-                                        <a href="#">最新消息</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">公關新聞</a></li>
-                                            <li><a href="#">新品介紹</a></li>
-                                            <li><a href="#">獲獎訊息</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="main-menu full-dropdown-submenu product-menu">
-                                        <a href="#">品牌產品</a>
-                                        <div class="sub-menu">
-                                            <div class="second-menu">
-                                                <ul>
-                                                    <li class="sub-title">全部商品</li>
-                                                    <li> <a href="#">全系列</a></li>
-                                                    <li> <a href="#">熱門產品</a> </li>
-                                                </ul>
-                                            </div>
-                                            <div class="second-menu">
-                                                <ul>
-                                                    <li class="sub-title">依品牌</li>
-                                                    <li> <a href="#">毛寶</a></li>
-                                                    <li> <a href="#">葳香</a> </li>
-                                     `               <li> <a href="#">全效</a></li>
-                                                    <li> <a href="#">小鹿山丘</a> </li>
-                                                    <li> <a href="#">毛寶S</a></li>
-                                                    <li> <a href="#">香滿室</a> </li>
-                                                    <li> <a href="#">毛寶兔</a></li>
-                                                    <li> <a href="#">EKO's</a> </li>
-                                                </ul>
-                                            </div>
-                                            <div class="second-menu">
-                                                <ul>
-                                                    <li class="sub-title">家庭清潔與防護</li>
-                                                    <li><a href="#">衣物清潔衣物清潔衣物</a></li>
-                                                    <li><a href="#">食器/料理用具清潔</a></li>
-                                                    <li><a href="#">廚房清潔</a></li>
-                                                    <li><a href="#">浴室清潔</a></li>
-                                                    <li><a href="#">地板/表面清潔</a></li>
-                                                    <li><a href="#">電器清潔</a></li>
-                                                    <li><a href="#">除蟲系列</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="second-menu">
-                                                <ul>
-                                                    <li class="sub-title">個人清潔與防護</li>
-                                                    <li><a href="#">防蚊防護</a></li>
-                                                    <li><a href="#">抗菌噴霧</a></li>
-                                                    <li><a href="#">身體清潔</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="main-menu full-dropdown-submenu investor-menu">
-                                        <a href="#">投資人專區</a>
-                                        <div class="sub-menu">
-                                            <div class="second-menu">
-                                                <ul>
-                                                    <li class="sub-title">公司治理</li>
-                                                    <li> <a href="#">公司組織架構</a></li>
-                                                    <li> <a href="#">內部稽核</a> </li>
-                                                    <li> <a href="#">董事會</a></li>
-                                                    <li> <a href="#">功能性委員會</a> </li>
-                                                </ul>
-                                            </div>
-                                            <div class="second-menu">
-                                                <ul>
-                                                    <li class="sub-title">財務業務資訊</li>
-                                                    <li><a href="#">公司年報</a></li>
-                                                    <li><a href="#">營收報表</a></li>
-                                                    <li><a href="#">財務報告</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="second-menu">
-                                                <ul>
-                                                    <li class="sub-title">股東服務</li>
-                                                    <li><a href="#">股東會資訊</a></li>
-                                                    <li><a href="#">重大訊息</a></li>
-                                                    <li><a href="#">股利股價資訊</a></li>
-                                                    <li><a href="#">股東問題回答</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="main-menu esg-menu">
-                                        <a href="#">企業社會責任</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">永續發展委員會</a></li>
-                                            <li><a href="#">利害關係人</a></li>
-                                            <li><a href="#">歷年永續報告書下載</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <div class="header__button">
-                                <ul>
-                                    <li class="member">
-                                        <div><i class="bi bi-person"></i></div>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">登入/註冊</a></li>
-                                            <li><a href="#">會員基本資料</a></li>
-                                            <li><a href="#">登出</a></li>
-                                        </ul>
-                                        <!--登入前-->
-                                        <!-- <a href="login.html" class="btn"><span>登入 / 註冊</span></a> -->
-                                    </li>
-                                    <li class="language">
-                                        <div><i class="bi bi-globe"></i></div>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">繁體中文</a></li>
-                                            <li><a href="#">English</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="header-search">
-                                        <div class="search-button"><i class="bi bi-search"></i></div>
-                                        <div class="search-input">
-                                            <input type="text" placeholder="請輸入關鍵字...">
-                                            <a href="#"></a> </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            
+                            <div class="close dialog-close-btn"></div>
                         </div>
-                        <!-- Menu 按鈕 -->
-                        <button class="l-nav_full-list-btn"><span></span></button>
-                        <!-- 彈窗 -->
-                        <dialog id="contentDialog" class="dialog-container">
-                            <div class="dialog-header">
-                                <div class="logo"> 
-                                    <a href="#"> 
-                                        <img src="images/logo.png" alt="">
-                                    </a> 
-                                </div>
-                                <div class="close dialog-close-btn"></div>
-                            </div>
-                            <div class="dialog-body">
-                                <div class="site-map-links" id="accordionSiteMap">
-                                    <div class="row">
-                                        <div class="col-lg-2">
-                                            <div class="site-map-item">
-                                                <div class="main-cate">關於毛寶</div>
-                                                <button class="accordion-button open-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu1" aria-expanded="false" aria-controls="collapse-menu1">
-                                                    <span></span>
-                                                </button>
-                                                <div id="collapse-menu1" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSiteMap">
-                                                <ul>
-                                                    <li><a href="#">公司簡介</a></li>
-                                                    <li><a href="#">公司願景</a></li>
-                                                    <li><a href="#">公司沿革</a></li>
-                                                    <li><a href="#">人才招募</a></li>
-                                                </ul>
-                                                </div>
+                        <div class="dialog-body">
+                            <div class="site-map-links" id="accordionSiteMap">
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <div class="site-map-item">
+                                            <div class="main-cate">關於毛寶</div>
+                                            <button class="accordion-button open-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu1" aria-expanded="false" aria-controls="collapse-menu1">
+                                                <span></span>
+                                            </button>
+                                            <div id="collapse-menu1" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSiteMap">
+                                            <ul>
+                                                <li><a href="#">公司簡介</a></li>
+                                                <li><a href="#">公司願景</a></li>
+                                                <li><a href="#">公司沿革</a></li>
+                                                <li><a href="#">人才招募</a></li>
+                                            </ul>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2">
-                                            <div class="site-map-item">
-                                                <div class="main-cate">最新消息</div>
-                                                <button class="accordion-button open-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu2" aria-expanded="false" aria-controls="collapse-menu2">
-                                                    <span></span>
-                                                </button>
-                                                <div id="collapse-menu2" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSiteMap">
-                                                <ul>
-                                                    <li><a href="#">公開新聞</a></li>
-                                                    <li><a href="#">新品介紹</a></li>
-                                                    <li><a href="#">獲獎訊息</a></li>
-                                                </ul>
-                                                </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="site-map-item">
+                                            <div class="main-cate">最新消息</div>
+                                            <button class="accordion-button open-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu2" aria-expanded="false" aria-controls="collapse-menu2">
+                                                <span></span>
+                                            </button>
+                                            <div id="collapse-menu2" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSiteMap">
+                                            <ul>
+                                                <li><a href="#">公開新聞</a></li>
+                                                <li><a href="#">新品介紹</a></li>
+                                                <li><a href="#">獲獎訊息</a></li>
+                                            </ul>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <div class="site-map-item">
-                                                <div class="main-cate">投資人關係</div>
-                                                <button class="accordion-button open-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu3" aria-expanded="false" aria-controls="collapse-menu3">
-                                                    <span></span>
-                                                </button>
-                                                <div id="collapse-menu3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSiteMap">
-                                                    <div class="row">
-                                                        <div class="col-lg-4">
-                                                            <div class="sub-cate">公司治理</div>
-                                                            <ul>
-                                                                <li><a href="#">公司組織架構</a></li>
-                                                                <li><a href="#">內部稽核</a></li>
-                                                                <li><a href="#">重要內部規章</a></li>
-                                                                <li><a href="#">董事會</a></li>
-                                                                <li><a href="#">功能性委員會</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-4">
-                                                            <div class="sub-cate">財務業務資訊</div>
-                                                            <ul>
-                                                                <li><a href="#">公司年報</a></li>
-                                                                <li><a href="#">營收報表</a></li>
-                                                                <li><a href="#">財務報告</a></li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="col-lg-4">
-                                                            <div class="sub-cate">股東服務</div>
-                                                            <ul>
-                                                                <li><a href="#">股東會資訊</a></li>
-                                                                <li><a href="#">重大訊息</a></li>
-                                                                <li><a href="#">股利股價資訊</a></li>
-                                                                <li><a href="#">股東問題回答</a></li>
-                                                            </ul>
-                                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="site-map-item">
+                                            <div class="main-cate">投資人關係</div>
+                                            <button class="accordion-button open-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu3" aria-expanded="false" aria-controls="collapse-menu3">
+                                                <span></span>
+                                            </button>
+                                            <div id="collapse-menu3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSiteMap">
+                                                <div class="row">
+                                                    <div class="col-lg-4">
+                                                        <div class="sub-cate">公司治理</div>
+                                                        <ul>
+                                                            <li><a href="#">公司組織架構</a></li>
+                                                            <li><a href="#">內部稽核</a></li>
+                                                            <li><a href="#">重要內部規章</a></li>
+                                                            <li><a href="#">董事會</a></li>
+                                                            <li><a href="#">功能性委員會</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="sub-cate">財務業務資訊</div>
+                                                        <ul>
+                                                            <li><a href="#">公司年報</a></li>
+                                                            <li><a href="#">營收報表</a></li>
+                                                            <li><a href="#">財務報告</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-4">
+                                                        <div class="sub-cate">股東服務</div>
+                                                        <ul>
+                                                            <li><a href="#">股東會資訊</a></li>
+                                                            <li><a href="#">重大訊息</a></li>
+                                                            <li><a href="#">股利股價資訊</a></li>
+                                                            <li><a href="#">股東問題回答</a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2">
-                                            <div class="site-map-item">
-                                                <div class="main-cate">企業社會責任</div>
-                                                <button class="accordion-button open-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu4" aria-expanded="false" aria-controls="collapse-menu4">
-                                                    <span></span>
-                                                </button>
-                                                <div id="collapse-menu4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSiteMap">
-                                                    <ul>
-                                                        <li><a href="#">永續發展委員會</a></li>
-                                                        <li><a href="#">利害關係人</a></li>
-                                                        <li><a href="#">歷年永續報告書下載專區</a></li>
-                                                    </ul>
-                                                </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="site-map-item">
+                                            <div class="main-cate">企業社會責任</div>
+                                            <button class="accordion-button open-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu4" aria-expanded="false" aria-controls="collapse-menu4">
+                                                <span></span>
+                                            </button>
+                                            <div id="collapse-menu4" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSiteMap">
+                                                <ul>
+                                                    <li><a href="#">永續發展委員會</a></li>
+                                                    <li><a href="#">利害關係人</a></li>
+                                                    <li><a href="#">歷年永續報告書下載專區</a></li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2">
-                                            <div class="site-map-item">
-                                                <div class="main-cate">品牌系列</div>
-                                                <button class="accordion-button open-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu5" aria-expanded="false" aria-controls="collapse-menu5">
-                                                    <span></span>
-                                                </button>
-                                                <div id="collapse-menu5" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSiteMap">
-                                                    <ul>
-                                                        <li><a href="#">毛寶</a></li>
-                                                        <li><a href="#">葳香</a></li>
-                                                        <li><a href="#">全效</a></li>
-                                                        <li><a href="#">小鹿山丘</a></li>
-                                                        <li><a href="#">毛寶S</a></li>
-                                                        <li><a href="#">香滿室</a></li>
-                                                        <li><a href="#">毛寶兔</a></li>
-                                                        <li><a href="#">EKO's</a></li>
-                                                    </ul>
-                                                </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="site-map-item">
+                                            <div class="main-cate">品牌系列</div>
+                                            <button class="accordion-button open-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu5" aria-expanded="false" aria-controls="collapse-menu5">
+                                                <span></span>
+                                            </button>
+                                            <div id="collapse-menu5" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSiteMap">
+                                                <ul>
+                                                    <li><a href="#">毛寶</a></li>
+                                                    <li><a href="#">葳香</a></li>
+                                                    <li><a href="#">全效</a></li>
+                                                    <li><a href="#">小鹿山丘</a></li>
+                                                    <li><a href="#">毛寶S</a></li>
+                                                    <li><a href="#">香滿室</a></li>
+                                                    <li><a href="#">毛寶兔</a></li>
+                                                    <li><a href="#">EKO's</a></li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8">
-                                            <div class="site-map-item">
-                                                <div class="main-cate">產品類別</div>
-                                                <button class="accordion-button open-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu6" aria-expanded="false" aria-controls="collapse-menu6">
-                                                    <span></span>
-                                                </button>
-                                                <div id="collapse-menu6" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSiteMap">
-                                                    <div class="row">
-                                                        <div class="col-lg-3">
-                                                            <div class="sub-cate">全部商品</div>
-                                                            <ul>
-                                                                <li><a href="#">全系列</a></li>
-                                                                <li><a href="#">熱門新品</a></li>
-                                                            </ul>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="site-map-item">
+                                            <div class="main-cate">產品類別</div>
+                                            <button class="accordion-button open-menu collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-menu6" aria-expanded="false" aria-controls="collapse-menu6">
+                                                <span></span>
+                                            </button>
+                                            <div id="collapse-menu6" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSiteMap">
+                                                <div class="row">
+                                                    <div class="col-lg-3">
+                                                        <div class="sub-cate">全部商品</div>
+                                                        <ul>
+                                                            <li><a href="#">全系列</a></li>
+                                                            <li><a href="#">熱門新品</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="sub-cate">家庭清潔與防護</div>
+                                                        <!-- <ul>
+                                                            <li><a href="#">衣物清潔</a></li>
+                                                            <li><a href="#">食器/料理用具清潔</a></li>
+                                                            <li><a href="#">廚房清潔</a></li>
+                                                            <li><a href="#">浴室清潔</a></li>
+                                                            <li><a href="#">地板/表面清潔</a></li>
+                                                            <li><a href="#">電器清潔</a></li>
+                                                            <li><a href="#">除蟲系列</a></li>
+                                                        </ul> -->
+                                                        <div class="d-grid grid-2">
+                                                                <ul>
+                                                                    <li><a href="#">衣物清潔</a></li>
+                                                                    <li><a href="#">食器/料理用具清潔</a></li>
+                                                                    <li><a href="#">廚房清潔</a></li>
+                                                                    <li><a href="#">浴室清潔</a></li>
+                                                                    <li><a href="#">地板/表面清潔</a></li>
+                                                                    <li><a href="#">電器清潔</a></li>
+                                                                    <li><a href="#">除蟲系列</a></li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li><a href="#">第八個分類</a></li>
+                                                                    <li><a href="#">第九個分類</a></li>
+                                                                </ul>
                                                         </div>
-                                                        <div class="col-lg-6">
-                                                            <div class="sub-cate">家庭清潔與防護</div>
-                                                            <!-- <ul>
-                                                                <li><a href="#">衣物清潔</a></li>
-                                                                <li><a href="#">食器/料理用具清潔</a></li>
-                                                                <li><a href="#">廚房清潔</a></li>
-                                                                <li><a href="#">浴室清潔</a></li>
-                                                                <li><a href="#">地板/表面清潔</a></li>
-                                                                <li><a href="#">電器清潔</a></li>
-                                                                <li><a href="#">除蟲系列</a></li>
-                                                            </ul> -->
-                                                            <div class="d-grid grid-2">
-                                                                    <ul>
-                                                                        <li><a href="#">衣物清潔</a></li>
-                                                                        <li><a href="#">食器/料理用具清潔</a></li>
-                                                                        <li><a href="#">廚房清潔</a></li>
-                                                                        <li><a href="#">浴室清潔</a></li>
-                                                                        <li><a href="#">地板/表面清潔</a></li>
-                                                                        <li><a href="#">電器清潔</a></li>
-                                                                        <li><a href="#">除蟲系列</a></li>
-                                                                    </ul>
-                                                                    <ul>
-                                                                        <li><a href="#">第八個分類</a></li>
-                                                                        <li><a href="#">第九個分類</a></li>
-                                                                    </ul>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <div class="sub-cate">個人清潔與防護</div>
-                                                            <ul>
-                                                                <li><a href="#">防蚊防護</a></li>
-                                                                <li><a href="#">抗菌噴霧</a></li>
-                                                                <li><a href="#">身體清潔</a></li>
-                                                            </ul>
-                                                        </div>
+                                                        
+                                                    </div>
+                                                    <div class="col-lg-3">
+                                                        <div class="sub-cate">個人清潔與防護</div>
+                                                        <ul>
+                                                            <li><a href="#">防蚊防護</a></li>
+                                                            <li><a href="#">抗菌噴霧</a></li>
+                                                            <li><a href="#">身體清潔</a></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-2">
-                                            <div class="site-map-item other-list">
-                                                <ul class="pt-0">
-                                                    <li><a href="#">合作通路</a></li>
-                                                    <li><a href="#">常見問題</a></li>
-                                                    <li><a href="#">聯絡我們</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="site-map-btn">
-                                                <a href="#" class="btn btn-outline btn-arr btn-download">
-                                                    <span>APP下載</span>
-                                                </a>
-                                                <a href="#" class="btn btn-outline btn-arr">
-                                                    <span>登入/註冊</span>
-                                                </a>
-                                            </div>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="site-map-item other-list">
+                                            <ul class="pt-0">
+                                                <li><a href="#">毛寶兔宅配網</a></li>
+                                                <li><a href="#">合作通路</a></li>
+                                                <li><a href="#">常見問題</a></li>
+                                                <li><a href="#">聯絡我們</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="site-map-btn">
+                                            <!-- <a href="#" class="btn btn-outline btn-arr btn-download">
+                                                <span>APP下載</span>
+                                            </a> -->
+                                            <a href="#" class="btn btn-outline btn-arr">
+                                                <span>登入/註冊</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                    </div>
+                        </div>
+                    </dialog>
                 </div>
             </div>
-            <!-- End Desktop Menu -->
         </div>
-    </header>
-    <!-- End Heder --> 
-
+        <!-- End Desktop Menu -->
+    </div>
+</header>
+<!-- End Heder --> 
 
     <!-- 此區塊刪除humburger選單會失效 -->
     <div class="none" style="display: none;">
@@ -836,7 +844,10 @@
     <div class="pageBanner">
         <div class="pageBannerTitle">
             <div class="wrap">
-                <div class="pageBannerTitleText">
+                <div class="pageBannerTitleText" data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out">
                     <span>
                         Product
                     </span>
@@ -1256,8 +1267,8 @@
 
 
 
-    <!--start Footer -->
-    <footer class="footer">
+   <!--start Footer -->
+   <footer class="footer">
         
     <div class="accordion" id="accordionExample">
         <button class="accordion-button open-footer collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFooter" aria-expanded="false" aria-controls="collapseFooter">
@@ -1335,9 +1346,10 @@
                     </div>
                     <div class="site-map-item">
                         <ul class="other-list">
+                            <li><a href="#">毛寶兔宅配網</a></li>
                             <li><a href="#">合作通路</a></li>
                             <li><a href="#">常見問題</a></li>
-                            <li><a href="#">APP下載</a></li>
+                            <!-- <li><a href="#">APP下載</a></li> -->
                             <li><a href="#">聯絡我們</a></li>
                         </ul>
                     </div>
@@ -1394,7 +1406,6 @@
     
     </footer>
     <!-- End Footer --> 
-
 
 <!-- back to top -->
 <div class="fix-right">

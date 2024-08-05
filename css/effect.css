@@ -753,6 +753,7 @@
 				cursor: pointer;
 				z-index: 11;
 				overflow: hidden;
+				background: rgba(0,0,0,0);
 			}
 			.dialog-container .close:before, .dialog-container .close:after {
 				content: "";

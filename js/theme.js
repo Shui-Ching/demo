@@ -38,6 +38,15 @@
         } else {
             topSticky.removeClass('top-sticky_mask');
         }
+
+        let scrollBg = $('.pageBanner');
+        if ($(this).scrollTop() > 0) {
+            scrollBg.addClass('top-sticky_mask');
+        } else {
+            scrollBg.removeClass('top-sticky_mask');
+        }
+
+
     });
     $('.to-top').on('click', function () {
         $("html, body").animate({
