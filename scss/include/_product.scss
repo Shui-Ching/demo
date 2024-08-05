@@ -81,18 +81,18 @@
 //大圖按鈕
 .pageProductShowTop .swiper-button-next, 
 .pageProductShowTop .swiper-button-prev {
-  border: 0;
+  // border: 0;
 }
 .pageProductShowTop .swiper-button-next:after, 
 .pageProductShowTop .swiper-button-prev:after {
-  color: #000;
+  color: $mainColor;
 }
-.pageProductShowTop .swiper-button-next:after {
-  content: "\F285";
-}
-.pageProductShowTop .swiper-button-prev:after {
-  content: " \F284";
-}
+// .pageProductShowTop .swiper-button-next:after {
+//   content: "\F285";
+// }
+// .pageProductShowTop .swiper-button-prev:after {
+//   content: " \F284";
+// }
 //大圖
 .mySwiper2{
   width: calc(100% - 200px);

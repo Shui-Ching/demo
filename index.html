@@ -1523,6 +1523,8 @@
     new Swiper(".NewproductSwiper", {
     slidesPerView: 1.5,
     spaceBetween: '1.5%',
+    loop: true,
+    loopFillGroupWithBlank: true,
     breakpoints: {
         // when window width is >= 1280px
         1280: {
@@ -1545,8 +1547,7 @@
         slidesPerView: 2,
         }
     },
-    loop: false,
-    loopFillGroupWithBlank: true,
+   
     navigation: {
     nextEl: ".swiper-button-next.np-next",
     prevEl: ".swiper-button-prev.np-prev",

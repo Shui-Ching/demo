@@ -238,7 +238,7 @@
 }
 @media (max-width: 991px) {
   .pageCategory .categoryList li {
-    margin: 10px;
+    margin: 10px 4px;
   }
 }
 .pageCategory .categoryList li.isActive a {
@@ -1053,22 +1053,9 @@ uncomment this part if you haven't added this code anywhere else
   }
 }
 
-.pageProductShowTop .swiper-button-next,
-.pageProductShowTop .swiper-button-prev {
-  border: 0;
-}
-
 .pageProductShowTop .swiper-button-next:after,
 .pageProductShowTop .swiper-button-prev:after {
-  color: #000;
-}
-
-.pageProductShowTop .swiper-button-next:after {
-  content: "\f285";
-}
-
-.pageProductShowTop .swiper-button-prev:after {
-  content: " \f284";
+  color: #002080;
 }
 
 .mySwiper2 {

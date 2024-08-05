@@ -1826,7 +1826,7 @@ footer a:hover{
 }
 .site-map-item .accordion-collapse {
   border-top: solid 1px var(--p-gray-color);
-  opacity: 0.5;
+  /* opacity: 0.5; */
   padding-top: 15px;
 }
 .site-map-links .site-map-item:before {
